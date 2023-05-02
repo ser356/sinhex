@@ -6,7 +6,10 @@
         "type": "dart",
         "request": "launch",
         "program": "lib/main.dart",
-        "args": ["run emulator -d sdk_gphone_x86"],
+        "args": [
+            "--flavor",
+            "dev"
+        ],
         "cwd": "${workspaceFolder}"
     }
 
