@@ -1,17 +1,29 @@
+ 
 {
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
     "configurations": [
-
-    {
-        "name": "Flutter",
-        "type": "dart",
-        "request": "launch",
-        "program": "lib/main.dart",
-        "args": [
-            "--flavor",
-            "dev"
-        ],
-        "cwd": "${workspaceFolder}"
-    }
-
+        {
+            "name": "sinhex",
+            "cwd": "sinhex",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "sinhex (profile mode)",
+            "cwd": "sinhex",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "sinhex (release mode)",
+            "cwd": "sinhex",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
     ]
 }
