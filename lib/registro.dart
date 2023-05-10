@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sinhex/hex.dart';
 import 'package:sinhex/main.dart';
-import 'package:sinhex/startview.dart';
+import 'package:sinhex/login.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 //Registro Screen
@@ -79,8 +79,8 @@ class FormWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return (ResponsiveRowColumn(
-      columnPadding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-      columnSpacing: 5,
+      columnPadding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+      columnSpacing: 15,
       layout: ResponsiveRowColumnType.COLUMN,
       children: [
         ResponsiveRowColumnItem(
@@ -186,7 +186,6 @@ class ButtonWidget extends StatelessWidget {
     return Expanded(
       child: (ResponsiveRowColumn(
           rowSpacing: 0.5,
-          rowPadding: EdgeInsets.all(10),
           rowMainAxisAlignment: MainAxisAlignment.spaceEvenly,
           layout: ResponsiveRowColumnType.ROW,
           children: [
@@ -211,10 +210,8 @@ class ButtonWidget extends StatelessWidget {
               rowFit: FlexFit.loose,
               child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => StartViewScreen()));
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => LoginScreen()));
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: '#65928A'.toColor(),

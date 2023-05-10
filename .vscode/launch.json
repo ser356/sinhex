@@ -5,16 +5,20 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "sinhex",
             "cwd": "sinhex",
             "request": "launch",
+            "program": "lib/main.dart",
             "type": "dart"
         },
         {
             "name": "sinhex (profile mode)",
             "cwd": "sinhex",
             "request": "launch",
+            "program": "lib/main.dart",
+
             "type": "dart",
             "flutterMode": "profile"
         },
@@ -22,6 +26,8 @@
             "name": "sinhex (release mode)",
             "cwd": "sinhex",
             "request": "launch",
+            "program": "lib/main.dart",
+
             "type": "dart",
             "flutterMode": "release"
         }
