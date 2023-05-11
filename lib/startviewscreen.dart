@@ -1,9 +1,13 @@
-import 'package:flutter/gestures.dart';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:image_picker/image_picker.dart';
 import 'hex.dart';
+import 'candidatescreen.dart';
 
 class StartViewScreen extends StatefulWidget {
+  const StartViewScreen({super.key});
   @override
   State<StartViewScreen> createState() => _StartViewScreenState();
 }
@@ -11,12 +15,19 @@ class StartViewScreen extends StatefulWidget {
 class _StartViewScreenState extends State<StartViewScreen> {
   @override
   Widget build(BuildContext context) {
-    return const StartViewWidget();
+    return StartViewWidget();
   }
 }
 
-class StartViewWidget extends StatelessWidget {
-  const StartViewWidget({super.key});
+class StartViewWidget extends StatefulWidget {
+  StartViewWidget({super.key});
+
+  @override
+  State<StatefulWidget> createState() => _StartViewWidgetState();
+}
+
+class _StartViewWidgetState extends State<StartViewWidget> {
+  _StartViewWidgetState();
 
   @override
   Widget build(BuildContext context) {
@@ -31,20 +42,20 @@ class StartViewWidget extends StatelessWidget {
                 ResponsiveRowColumnItem(
                   rowFlex: 2,
                   columnFlex: 2,
-                  child: InkWell(
-                    onTap: () => {},
-                    child: Container(
+                  rowFit: FlexFit.tight,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: CircleAvatar(
                       // set circular shape
-                      width: 40,
-                      height: 40,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                          image: NetworkImage(
-                              "https://img.freepik.com/vector-premium/hola-hola-letras-frase-aisladas-blanco-vector-diseno-efecto-texto-colorido-texto-o-inscripciones-ingles-diseno-moderno-creativo-tiene-colores-rojo-naranja-amarillo_7280-7768.jpg?w=2000"),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
+
+                      radius: 20,
+                      // set background image and its fit
+
+                      backgroundImage:
+                          Image.network("https://i.imgur.com/BoN9kdC.png")
+                              .image,
                     ),
                   ),
                 ),
@@ -52,7 +63,8 @@ class StartViewWidget extends StatelessWidget {
         ),
         body: const Center(
             child: ResponsiveRowColumn(
-                columnSpacing: 40,
+                columnMainAxisAlignment: MainAxisAlignment.center,
+                columnSpacing: 20,
                 layout: ResponsiveRowColumnType.COLUMN,
                 children: [
               ResponsiveRowColumnItem(
@@ -60,46 +72,53 @@ class StartViewWidget extends StatelessWidget {
                   columnFlex: 2,
                   rowFit: FlexFit.tight,
                   child: SizedBox(
-                    height: 200,
+                    height: 170,
                     child: Card(
-                      child: SuperiorWidget(),
+                      child: SuperiorWidget(listaDeProyectos: []),
                     ),
                   )),
               ResponsiveRowColumnItem(
-                  child: SizedBox(
-                      height: 360, child: Card(child: WidgetListaProyectos())))
+                  rowFlex: 2,
+                  columnFlex: 2,
+                  rowFit: FlexFit.tight,
+                  child: Padding(
+                    padding: EdgeInsets.only(bottom: 20),
+                    child: SizedBox.expand(
+                        child: Card(
+                      elevation: 10,
+                      child: InferiorWidget(
+                        recientes: [],
+                      ),
+                    )),
+                  ))
             ])));
   }
 }
 
-class WidgetListaProyectos extends StatefulWidget {
-  const WidgetListaProyectos({super.key});
+class InferiorWidget extends StatefulWidget {
+  const InferiorWidget({@required recientes});
 
   @override
-  State<WidgetListaProyectos> createState() => _WidgetListaProyectosState();
+  State<InferiorWidget> createState() => _InferiorWidgetState();
 }
 
-class _WidgetListaProyectosState extends State<WidgetListaProyectos> {
+class _InferiorWidgetState extends State<InferiorWidget> {
   @override
   Widget build(BuildContext context) {
-    return buildListaProyectosVacia();
-  }
-
-  ListView buildListaProyectosVacia() {
-    return ListView.builder(
-      itemCount: 0,
-      itemBuilder: (BuildContext context, int index) {
-        return ListTile(
-          title: Text('Item $index'),
-        );
-      },
-    );
+    return (Center());
   }
 }
 
-class SuperiorWidget extends StatelessWidget {
-  const SuperiorWidget({super.key});
+class SuperiorWidget extends StatefulWidget {
+  final List<Image> listaDeProyectos;
+  const SuperiorWidget({required this.listaDeProyectos});
 
+  @override
+  State<SuperiorWidget> createState() => _SuperiorWidgetState();
+}
+
+class _SuperiorWidgetState extends State<SuperiorWidget> {
+  String path = "";
   @override
   Widget build(BuildContext context) {
     return ResponsiveRowColumn(
@@ -132,29 +151,99 @@ class SuperiorWidget extends StatelessWidget {
                 padding:
                     const EdgeInsets.only(top: 5, bottom: 150.0, right: 10),
                 child: FittedBox(
-                    alignment: Alignment.topRight,
-                    fit: BoxFit.none,
-                    child: InkWell(
-                      overlayColor:
-                          MaterialStateProperty.all(Colors.transparent),
-                      onTap: () {
-                        //buildListaProyectos();
-                      },
-                      child: RichText(
-                        text: TextSpan(
-                            text: 'Añadir',
-                            style: TextStyle(
-                                color: '012016'.toColor(), fontSize: 18),
-                            children: [
-                              WidgetSpan(
-                                  child: Icon(
-                                Icons.add,
-                                color: "65928A".toColor(),
-                              ))
-                            ]),
-                      ),
-                    )),
+                  alignment: Alignment.topRight,
+                  fit: BoxFit.none,
+                  child: InkWell(
+                    onTap: () {
+                      selectImage();
+                    },
+                    child: RichText(
+                      text: TextSpan(
+                          text: 'Añadir',
+                          style: TextStyle(
+                              color: '012016'.toColor(), fontSize: 18),
+                          children: [
+                            WidgetSpan(
+                                child: Icon(
+                              Icons.add,
+                              color: "65928A".toColor(),
+                            ))
+                          ]),
+                    ),
+                  ),
+                ),
               ))
         ]);
+  }
+
+  Future selectImage() {
+    return showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            elevation: 10,
+            title: Text("Selecciona una imagen"),
+            content: SingleChildScrollView(
+              child: ListBody(
+                children: <Widget>[
+                  GestureDetector(
+                    child: Text("Galeria"),
+                    onTap: () async {
+                      path = await openGallery();
+                      setState(() {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    CandidateScreen(objeto: path)));
+                      });
+                    },
+                  ),
+                  Padding(padding: EdgeInsets.all(8.0)),
+                  GestureDetector(
+                    child: Text("Camara"),
+                    onTap: () async {
+                      path = await openCamera();
+                      setState(() {
+                        if (path != '') {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => CandidateScreen(
+                                        objeto: path,
+                                      )));
+                        } else {
+                          SnackBar(
+                              content:
+                                  Text("No se ha seleccionado ninguna imagen"));
+                        }
+                      });
+                    },
+                  )
+                ],
+              ),
+            ),
+          );
+        });
+  }
+
+  openGallery() async {
+    XFile? file = await ImagePicker()
+        .pickImage(source: ImageSource.gallery, imageQuality: 10);
+    if (file != null) {
+      return file.path;
+    } else {
+      return '';
+    }
+  }
+
+  openCamera() async {
+    XFile? file = await ImagePicker()
+        .pickImage(source: ImageSource.camera, imageQuality: 10);
+    if (file != null) {
+      return file.path;
+    } else {
+      return '';
+    }
   }
 }
