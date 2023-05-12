@@ -154,21 +154,25 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
                   alignment: Alignment.topRight,
                   fit: BoxFit.none,
                   child: InkWell(
-                    onTap: () {
+                    onTap: () async {
                       selectImage();
+                      setState(() {});
                     },
-                    child: RichText(
-                      text: TextSpan(
-                          text: 'Añadir',
-                          style: TextStyle(
-                              color: '012016'.toColor(), fontSize: 18),
-                          children: [
-                            WidgetSpan(
-                                child: Icon(
-                              Icons.add,
-                              color: "65928A".toColor(),
-                            ))
-                          ]),
+                    child: FittedBox(
+                      fit: BoxFit.contain,
+                      child: RichText(
+                        text: TextSpan(
+                            text: 'Añadir',
+                            style: TextStyle(
+                                color: '012016'.toColor(), fontSize: 18),
+                            children: [
+                              WidgetSpan(
+                                  child: Icon(
+                                Icons.add,
+                                color: "65928A".toColor(),
+                              ))
+                            ]),
+                      ),
                     ),
                   ),
                 ),
@@ -191,11 +195,15 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
                     onTap: () async {
                       path = await openGallery();
                       setState(() {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    CandidateScreen(objeto: path)));
+                        print(path);
+                        if (path != '') {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => CandidateScreen(
+                                        objeto: path,
+                                      )));
+                        }
                       });
                     },
                   ),
@@ -205,6 +213,7 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
                     onTap: () async {
                       path = await openCamera();
                       setState(() {
+                        print(path);
                         if (path != '') {
                           Navigator.push(
                               context,
@@ -212,10 +221,6 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
                                   builder: (context) => CandidateScreen(
                                         objeto: path,
                                       )));
-                        } else {
-                          SnackBar(
-                              content:
-                                  Text("No se ha seleccionado ninguna imagen"));
                         }
                       });
                     },
