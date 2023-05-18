@@ -1,1 +1,58 @@
+Sergio García Seco (ser356)
+
+CONCEPTOS 
+
+hexadecimal, sinestesia, flutter, dart, Material Design, Cupertino, Trello, interfaz, API, AI, WebDesign
+
+
+Introducción
+
+sinhex (nombre original: sinhextesia, de sinestesia y hexadecimal) se presenta como una alternativa para aquellas personas que no tienen la capacidad de realizar asociaciones sinestésicas de manera natural.
+
+La sinestesia según el diccionario de la Real Academia de la Lengua Española consiste en la unión de sensaciones procedentes de diferentes dominios sensoriales, esto es, una melodía con color, una ecuación con sonido etc.
+
+La idea es simple, el sistema obtendrá una referencia de la imagen proporcionada y realizará una interpretación exclusiva para cada una de ellas.
+
+Búsqueda de Necesidades
+
+Desde la perspectiva del creador siempre se ha querido facilitar la experiencia del usuario en lo referente a lo artístico-musical.
+
+Para sinhex se ha realizado una evaluación de la audiencia sin tener en cuenta el rango de edad puesto que se asume como una aplicación meramente recreacional, para todo el mundo.
+
+A continuación se detalla el análisis de las preguntas realizadas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fase 2—
+
+Se ha empleado Trello como herramienta para la lluvia de ideas y para la creación de listas to-do.
+
+
+
+Es importante resaltar que sinhex es la elección final tras varias ideas propuestas a lo largo del curso.
+
+Tal y como se ha puesto de manifiesto con anterioridad, dichas ideas están íntimamente relacionadas, y a pesar de prescindir de ellas, forman parte del proceso de aprendizaje necesario para elaborar lo que finalmente es sinhex.
+
+
+SETS, listas inteligentes, se presentó como propuesta inicial en el elevator pitch.
+Consistía en un manejador y creador de listas para todo el mundo basado en el estado de ánimo y la popularidad sincronizado con Spotify.
+
+Se creó un pequeño prototipo web empleando Svelte para el frontend y NodeJs para el backend. 
+
+El creador asistió a un taller de APIs para reforzar el conocimiento sobre las mismas.
+
+Finalmente se desechó la idea por ser poco innovadora.
 
