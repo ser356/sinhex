@@ -1,13 +1,13 @@
 ![USAL](./imgs/design/image4.jpg)
 
 <div style="page-break-after: always; visibility: hidden">
-\pagebreak
+
 </div>
 
 ![sinhex](./imgs/design/splashscreen.png)
 
 <div style="page-break-after: always; visibility: hidden">
-\pagebreak
+
 </div>
 
 # sinhex
@@ -51,7 +51,7 @@ A lo largo del documento se refleja la constante fijación por la música por pa
 Tras numerosos cambios en el enfoque sinhex es la idea que se lanza como propuesta final.
 
 <div style="page-break-after: always; visibility: hidden">
-\pagebreak
+
 </div>
 
 # Estado del Arte
@@ -79,7 +79,7 @@ Se ha obtenido una clara victoria del piano con un 75% de los votos, seguido del
          ">
 
 <div style="page-break-after: always; visibility: hidden">
-\pagebreak
+
 </div>
 
 #### **¿Es usted capaz de realizar asociaciones sinestésicas?**
@@ -214,7 +214,7 @@ Navegación por la Interfaz: [sin# TUTORIAL](https://youtu.be/ofFsVAbTR2o)
 Acceso a Trello: [Trello](https://trello.com/b/ZMaSyArU/sinhex)
 
 <div style="page-break-after: always; visibility: hidden">
-\pagebreak
+
 </div>
 
 ## Estructura del Sistema
@@ -231,7 +231,7 @@ width: 100%;
 ">
 
 <div style="page-break-after: always; visibility: hidden">
-\pagebreak
+
 </div>
 
 ## SplashScreen
@@ -408,7 +408,7 @@ Pantallas accesibles: <a href="#startscreen">StartScreen</a><br>
 </p>
 
 <div style="page-break-after: always; visibility: hidden">
-\pagebreak
+
 </div>
 
 ## **Escenarios de uso**
