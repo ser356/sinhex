@@ -240,7 +240,7 @@ width: 100%;
 elevation: 10;
 margin-left: auto;
 margin-right: auto;
-width: 30%;
+width: 25%;
 ">
 
 <p style="
@@ -260,7 +260,7 @@ las cargas antes del inicio
 elevation: 10;
 margin-left: auto;
 margin-right: auto;
-width: 30%;
+width: 28%;
 ">
 
 <p style="
@@ -281,7 +281,7 @@ Pantallas accesibles: <a href="#registroform">RegistroForm</a>, <a href="#starts
 elevation: 10;
 margin-left: auto;
 margin-right: auto;
-width: 30.56%;
+width: 25%;
 ">
 
 <p style="
@@ -354,7 +354,7 @@ Proporciona un Logout de la aplicación. Se vuelve a la pantalla de inicio de se
 elevation: 10;
 margin-left: auto;
 margin-right: auto;
-width: 30%;
+width: 25%;
 ">
 
 <p style="
@@ -373,7 +373,7 @@ Pantallas accesibles: <a href="#loginform">LoginForm</a><br>
 elevation: 10;
 margin-left: auto;
 margin-right: auto;
-width: 28.56%;
+width: 20.56%;
 ">
 
 <p style="
@@ -392,7 +392,7 @@ Pantallas accesibles: <a href="#loadcandidate">LoadCandidate</a>, <a href="#sett
 elevation: 10;
 margin-left: auto;
 margin-right: auto;
-width: 28%;
+width: 20%;
 ">
 
 <p style="
