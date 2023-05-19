@@ -18,9 +18,15 @@
 
 Synesthetic relations between given images and generated audible outputs as result (INTERACCION PERSONA ORDENADOR USAL).
 
+Use of Flutter and Dart for the development of a mobile application that allows the user to generate melodies from images.
+
+## Keywords
+
+_**API, AI, audience, Cupertino, Dart, Figma, flutter, hexadecimal, interface, Material Design, prototype, synesthesia, Trello, WebDesign**_
+
 ## CONCEPTOS
 
-_**hexadecimal, sinestesia, flutter, dart, Material Design, Cupertino, Trello, interfaz, API, AI, WebDesign**_
+_**API, AI, audiencia,Cupertino, Dart, Figma,  flutter, hexadecimal, interfaz, Material Design, prototipo, sinestesia, Trello, WebDesign**_
 
 ## Introducción
 
@@ -28,7 +34,7 @@ sinhex se presenta como una alternativa para aquellas personas que no tienen la 
 
 La sinestesia según el diccionario de la Real Academia de la Lengua Española consiste en la unión de sensaciones procedentes de diferentes dominios sensoriales, esto es, una melodía con color, una ecuación con sonido etc.
 
-La idea es simple, el sistema obtendrá una referencia de la imagen proporcionada y realizará una interpretación exclusiva para cada una de ellas.
+Una idea simple en la que el sistema obtendrá una referencia de la imagen proporcionada y realizará una interpretación exclusiva para cada una de ellas.
 
 El resultado será una melodía única y exclusiva para cada imagen.
 
@@ -40,7 +46,9 @@ El objetivo principal es la creación de una aplicación móvil que permita al u
 
 Desde la perspectiva del creador siempre se ha querido facilitar la experiencia del usuario en lo referente a lo artístico-musical.
 
-Se desea elaborar una aplicaciçon con el fin de hacer llegar la experiencia sinesética a todo el mundo.
+A lo largo del documento se refleja la constante fijación por la música por parte del autor y el deseo de compartir dicha experiencia a través de diferentes ideas.
+
+Tras numerosos cambios en el enfoque sinhex es la idea que se lanza como propuesta final.
 
 <div style="page-break-after: always; visibility: hidden">
 \pagebreak
@@ -76,7 +84,7 @@ Se ha obtenido una clara victoria del piano con un 75% de los votos, seguido del
 
 #### **¿Es usted capaz de realizar asociaciones sinestésicas?**
 
-Sorprendentemente la mayoría de la gente entrevistada sí que es capaz de realizar asociaciones sinestésicas, lo que sugirió un cambio de enfoque en la forma de aprender de los usuarios.
+Sorprendentemente la mayoría de la gente entrevistada sí que es capaz de realizar asociaciones sinestésicas, lo que sugirió un cambio de enfoque en la forma de aprender de los usuarios y en la manera en la que se entendió la necesidad de crear una aplicación 'sinestésica'.
 
 <img src="./imgs/segunda.png"   style="
 display: block;
@@ -265,6 +273,8 @@ Inicio de Sesión<br>
 Pantallas accesibles: <a href="#registroform">RegistroForm</a>, <a href="#startscreen">StartScreen</a><br>
 </p>
 
+<div style="page-break-after: always; visibility: hidden">
+
 ## Settings
 
 <img src="./imgs/design/image1.png" style="
@@ -363,7 +373,7 @@ Pantallas accesibles: <a href="#loginform">LoginForm</a><br>
 elevation: 10;
 margin-left: auto;
 margin-right: auto;
-width: 30.56%;
+width: 28.56%;
 ">
 
 <p style="
@@ -382,7 +392,7 @@ Pantallas accesibles: <a href="#loadcandidate">LoadCandidate</a>, <a href="#sett
 elevation: 10;
 margin-left: auto;
 margin-right: auto;
-width: 30%;
+width: 28%;
 ">
 
 <p style="
@@ -457,6 +467,8 @@ Carga de candidato.
 
 ### _NOTA_ : La versión final del prototipo modifica ciertas características en las ventanas de cambio de contraseña y email con respecto a entregas anteriores puesto que ciertas opciones de navegación contenian errores (en esta versión corregida se navega respectivamente al inicio de sesión y a la misma pantalla).
 
+<div style="page-break-after: always; visibility: hidden">
+
 ## **Error Handling**
 
 Las pantallas con alta capacidad de contener error por parte del usuario incorporan botones de cancelación y de confirmación.
@@ -465,15 +477,29 @@ Si el usuario no desea realizar la acción, puede cancelarla y volver a la panta
 
 Además se cuenta tanto con la documentación de la aplicación como con un tutorial de uso.
 
-<div style="page-break-after: always; visibility: hidden">
-
 Los botones clicables de desplazamiento hacia atrás están disponibles están disponibles en tres formas distintas:
 
 - _**Botón de desplazamiento hacia atrás en la barra de navegación.**_
 
+   <img src="./imgs/design/atras.jpg" style="width: 15%">
+   
+   Disponible en todas las pantallas con SnackBar menos la inicial, permite volver a la pantalla anterior.
+
 - _**Botón Stadium en la parte inferior de la pantalla 'Atrás'.**_
 
+   <img src="./imgs/design/Back.png" style="width: 15%">
+
+  Disponible en los formularios, permite volver a la pantalla anterior.
+
+- _**Botón Stadium en la parte inferior de la pantalla (variación) 'Volver Atrás'.**_
+
+   <img src="./imgs/design/volveratras.png" style="width: 20%">
+
+   Disponible en la pantalla de resultado de la asociación, permite volver a la pantalla anterior.
+
 - _**Botón Stadium en la parte inferior de la pantalla 'Recargar'.**_
+
+   <img src="./imgs/design/Recargar.png" style="width: 20%">
 
   Disponible en la elección del candidato, devuelve el control al sistema operativo para que el usuario pueda elegir otra imagen.
 
@@ -488,22 +514,27 @@ Fue acuñada por Jakob Nielsen en 1989-1990.
 De acuerdo con los criterios de Nielsen, la evaluación heurística ha seguido el siguiente decálogo:
 
 1. Visibilidad del estado del sistema:
-
    > El sistema debe mantener informado al usuario sobre lo que está sucediendo, a través de retroalimentación apropiada dentro de un tiempo razonable.
-
 2. Coincidencia entre el sistema y el mundo real:
-
    > El sistema debe hablar el lenguaje del usuario, con palabras, frases y conceptos familiares para el usuario, en lugar de términos orientados al sistema. Sigue las convenciones del mundo real, haciendo que la información aparezca en un orden natural y lógico.
-
 3. Control y libertad del usuario :
    > Los usuarios a menudo eligen funciones del sistema por error y necesitan una "salida de emergencia" claramente marcada para salir del estado no deseado sin tener que pasar por un diálogo extenso. Admite "deshacer" y "rehacer" (o en su defecto cancelar).
-4. Consistencia y estándares
-5. Prevención de errores
-6. Reconocimiento en lugar de recuerdo
-7. Flexibilidad y eficiencia de uso
-8. Estética y diseño minimalista
-9. Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores
-10. Ayuda y documentación
+4. Consistencia y estándares:
+   > Se siguen las convenciones de la plataforma.
+5. Prevención de errores:
+   > Inclusión de mensajes de error y confirmación de acciones.
+6. Reconocimiento en lugar de recuerdo:
+   > Minimizar la carga de memoria del usuario, haciendo que los objetos, acciones y opciones sean visibles. El usuario no debe tener que recordar información de una parte del diálogo a otra. Las instrucciones de uso del sistema deben ser visibles o fácilmente recuperables cuando sea apropiado.
+7. Flexibilidad y eficiencia de uso:
+   > Hotkeys, atajos, accesos directos, etc.
+8. Estética y diseño minimalista:
+   > Los diálogos no deben contener información irrelevante o rara vez necesaria. Cada unidad extra de información en un diálogo compite con las unidades relevantes de información y disminuye su visibilidad relativa. Se siguenn principios de diseño establecidos.
+9. Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores:
+   > Los mensajes de error deben ser expresados en lenguaje claro (sin códigos), indicar con precisión el problema y sugerir una solución constructiva.
+10. Ayuda y documentación:
+    > Incluye documentación de ayuda y tutoriales.
+
+<div style="page-break-after: always; visibility: hidden">
 
 ### **Evaluación Heurística 1**
 
@@ -551,7 +582,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
 
 <div style="page-break-after: always; visibility: hidden">
 
-
 ### **Evaluación Heurística 2**
 
 ### _Usuario 2_
@@ -597,7 +627,6 @@ _**10. Ayuda y documentación**_
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
 
 <div style="page-break-after: always; visibility: hidden">
-
 
 ### **Evaluación Heurística 3**
 
