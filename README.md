@@ -419,19 +419,20 @@ El acceso queda reservado a usuarios registrados.
 
 Cambio de contraseña.
 
+![pwd](./vid/pwd.gif)
  
 
 ### **Escenario 2**
 
 Cambio de correo electrónico.
 
- 
+![pwd](./vid/email.gif) 
 
 ### **Escenario 3**
 
 Cambio de idioma.
 
- 
+![pwd](./vid/lang.gif) 
 
 <div style="page-break-after: always; visibility: hidden">
 
@@ -439,7 +440,7 @@ Cambio de idioma.
 
 Cambio de foto de perfil.
 
- 
+![pwd](./vid/pfp.gif)
 
 ### **Escenario 5**
 
@@ -449,7 +450,7 @@ Salir de la aplicación.
 
 Carga de candidato.
 
- 
+![pwd](./vid/candidato.gif)
 
 ### _NOTA_ : La versión final del prototipo modifica ciertas características en las ventanas de cambio de contraseña y email con respecto a entregas anteriores puesto que ciertas opciones de navegación contenian errores (en esta versión corregida se navega respectivamente al inicio de sesión y a la misma pantalla).
 
