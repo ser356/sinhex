@@ -4,7 +4,7 @@
 
 </div>
 
-![sinhex](./imgs/design/splashscreen.png)
+![sinhex](./imgs/design/SplashScreen.png)
 
 <div style="page-break-after: always; visibility: hidden">
 
