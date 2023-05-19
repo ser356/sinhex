@@ -369,19 +369,15 @@ Pantallas accesibles: <a href="#loginform">LoginForm</a><br>
 
 ## StartScreen
 
-<img src="./imgs/design/image5.png" style="
+
+<img src="./imgs/design/image7.png" style="
 elevation: 10;
 margin-left: auto;
 margin-right: auto;
-width: 20.56%;
+width: 25%;
 ">
+<p> 
 
-<p style="
-text-align: top;
-font-size: 20px;
-font-style: italic;
-color: grey;
-">
 Pantalla Inicial, con conexión directa al resto de funcionalidades.<br>
 Pantallas accesibles: <a href="#loadcandidate">LoadCandidate</a>, <a href="#settings">Settings</a><br>
 </p>
@@ -423,7 +419,7 @@ El acceso queda reservado a usuarios registrados.
 
 Cambio de contraseña.
 
-<a href="./vid/pwd.mp4" title="Link Title"></a>
+
 
 ### **Escenario 2**
 
