@@ -419,7 +419,7 @@ El acceso queda reservado a usuarios registrados.
 
 Cambio de contraseña.
 
-
+<video src="vid/pwd.mp4" width=20/>
 
 ### **Escenario 2**
 
