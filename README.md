@@ -525,7 +525,9 @@ De acuerdo con los criterios de Nielsen, la evaluación heurística ha seguido e
 
 ### **Evaluación Heurística 1**
 
-### _Usuario 1_: David
+
+
+### _Usuario 1_: David DNI: ****678A IPO 
 
 > El flujo de uso será por tanto : Se accede al  sistema y se añade una imagen y se obtiene como resultado la imagen de vuelta más un sonido.\
 El método de evaluación que voy a usar es el de Nielsen, este  método consta de 10 reglas  las cuales tienen como objetivo detectar errores que no se detectan con pruebas de usuarios.
@@ -541,7 +543,6 @@ block: auto;
 margin-left: auto;
 margin-right: auto;
 width: 25%;" />
-" />
 
 >En todo momento se conoce en qué apartado te encuentras por ejemplo cuando vas al menú de ajustes, aparece un texto en la parte superior que nos indica que efectivamente estamos en el apartado de ajustes\
 El único aspecto negativo a comentar es que cuando añades al candidato no recibes ningún mensaje que te indique que se ha guardado con éxito sino que simplemente vuelves a la pantalla anterior.
@@ -569,7 +570,7 @@ block: auto;
 margin-left: auto;
 margin-right: auto;
 width: 25%;" />
-" />
+
 
 _**5. Prevención de errores**_
 
@@ -579,23 +580,41 @@ En un posible modelo funcional tendría que asegurar la carga de los elementos c
 
 _**6. Reconocimiento en lugar de recuerdo**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>Con el objetivo de hacer pantallas lo más limpias y estéticas posibles, en ocasiones dificultamos la experiencia del usuario con elementos crentes de affordance,  por ello debemos tener esto en cuenta y procurar que la carga mental que realice el usuario sea la mínima posible.\
+La app de mi compañero tiene un apartado de proyectos y dentro de él uno de proyectos recientes ese aspecto es muy positivo pues reduce la carga cognitiva del usuario a la hora de acceder a algún proyecto que frecuente mucho pues le aparecerá en media de la pantalla y con un solo toque a la misma accedes a él.\
+Una deficiencia que le encuentro a la aplicación es que, a la hora de introducir la imagen y que se genere la música no tenemos ningun boton que nos diga directamente que pulsando en él se vaya a reproducir el sonido, como podría ser un botón con una nota musical
+
 
 _**7. Flexibilidad y eficiencia de uso**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>Si una aplicación no se adapta a diferentes tipos de usuarios está teniendo carencia es ente apartado.\
+La información que maneja la app es muy técnica en algunos aspectos, por lo tanto un usuario que desconozca de  este concepto puede sentirse algo perdido, por lo tanto aportar algo de información sobre qué proceso se realiza para generar este sonido o algún ejemplo.
+
 
 _**8. Estética y diseño minimalista**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+Este apartado califica si , se añade más información de la estrictamente necesaria que recargue la visión del usuario.\
+La interfaz tiene una estética muy limpia y elimina todo elemento que no sea estrictamente necesario en su interfaz.\
+Como podemos observar en está imagen no se ve nada que no sea usable de forma muy directa.
+
+<img src="./imgs/heuristica/1/image3.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
+
 
 _**9. Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>Es muy difícil prevenir todos los errores pues cuando llevas una app a los usuarios estos plantean situaciones que nunca hubieras imaginado, por lo tanto ayudar al usuario a reconocerlo y solucionarlos es muy importante.\
+Como mencioné anteriormente la funcionalidad de la aplicación está muy definida y es difícil que aparezcan errores.
+
 
 _**10. Ayuda y documentación**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>Ante posibles dudas que tenga el usuario debe existir un apartado de ayuda, para evitar llamas al soporte.\
+La aplicación cuenta con un apartado de preguntas frecuentes ubicado en el apartado  de ajustes, no obstante el concepto de la aplicación el algo complejo , por lo tanto un apartado informativo en el login o en la página principal sería una opción muy a tener en cuenta.
+
 
 <div style="page-break-after: always; visibility: hidden">
 
@@ -688,3 +707,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
 _**10. Ayuda y documentación**_
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+
+
+
+<div style="page-break-after: always; visibility: hidden">
+
+
+## **Implementación de la solución**
+
+Una vez realizada la evaluación heurística y recibido el feedback de los usuarios, se procede a realizar una implementación de la solución.
+
+Para ello se ha empleado el framework Flutter, que permite desarrollar aplicaciones multiplataforma, es decir, que se pueden ejecutar en Android, iOS, Windows, Mac, Linux y web.
+
+La evolución de la aplicación se puede ver en el siguiente [repositorio](https://github.com/ser356/sinhex) de GitHub.
+
+
