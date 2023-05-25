@@ -525,27 +525,47 @@ De acuerdo con los criterios de Nielsen, la evaluación heurística ha seguido e
 
 ### **Evaluación Heurística 1**
 
-### _Usuario 1_
+### _Usuario 1_: David
+
+> El flujo de uso será por tanto : Se accede al  sistema y se añade una imagen y se obtiene como resultado la imagen de vuelta más un sonido.\
+El método de evaluación que voy a usar es el de Nielsen, este  método consta de 10 reglas  las cuales tienen como objetivo detectar errores que no se detectan con pruebas de usuarios.
 
 _**1. Visibilidad del estado del sistema**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>Consiste en darle al usuario información sobre las acciones que ha realizado, o de los fallos que está cometiendo.\
+Es decir la capacidad de emitir feedback al usuario.
+Después de usar durante un largo periodo de tiempo la app detecté diferente cuestiones:
+
+![img1](./imgs/heuristica/1/image1.png)
+
+>En todo momento se conoce en qué apartado te encuentras por ejemplo cuando vas al menú de ajustes, aparece un texto en la parte superior que nos indica que efectivamente estamos en el apartado de ajustes\
+El único aspecto negativo a comentar es que cuando añades al candidato no recibes ningún mensaje que te indique que se ha guardado con éxito sino que simplemente vuelves a la pantalla anterior.
 
 _**2. Coincidencia entre el sistema y el mundo real**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>En este apartado evalúo si el sistema es comprensible desde el punto de vista de un usuario que lo usa por primera vez, sin tener automatismos adquiridos ni conocer en profundidad la app\
+La app ofrece mensajes claros y sin conceptos complicados , además son aspectos tangibles y fáciles de entender.\
+Como aspecto negativo recalcar que la palabra recargar no se termina de entender para qué sirve y habría que explicar algo más ese aspecto.
 
 _**3. Control y libertad del usuario**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>Está regla habla sobrero ofrecerle al usuario la posibilidad de hacer lo que desee, y darle la capacidad de rehacer las opciones que haya realizado por error.
+La app ofrece un botón de “paso atrás”, para solucionar posibles configuraciones erróneas.\
+
 
 _**4. Consistencia y estándares**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>Este aspecto califica si la app usa elementos fácilmente reconocibles por la mayoría de los usuarios, es decir que sepas que un botón va a realizar la acción que sea por que ya los ha visto en otras apps.\
+En este aspecto la app tiene un botón con un + que sirve par añadir, es un recurso muy bueno y que da entender la operación de adicción que posteriormente se va a ofrecer\ 
+Otro ejemplo de buenos estándares vuelve a ser la pantalla de ajustes, los iconos empleados para todos sus elementos son muy usados en otras aplicaciones y webs por lo tanto un usuario que no tenga experiencia en la app no tendrá problema en reconocer estos iconos.
+
+![img2](imgs/heuristica/1/image2.png)
 
 _**5. Prevención de errores**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>Hay acciones que realiza el usuario que le pueden llevar a problemas en un futuro, estas situaciones tienen que ser controladas por el sistema para que no dé lugar a errores.\
+La app es consistente ante estos posibles errores, aunque no se me ocurren muchos errores posibles.\
+En un posible modelo funcional tendría que asegurar la carga de los elementos correctamnete , es decir que la imagen esté en el formato correcto por ejemplo.
 
 _**6. Reconocimiento en lugar de recuerdo**_
 
