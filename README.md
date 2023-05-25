@@ -593,7 +593,7 @@ La información que maneja la app es muy técnica en algunos aspectos, por lo ta
 
 _**8. Estética y diseño minimalista**_
 
-Este apartado califica si , se añade más información de la estrictamente necesaria que recargue la visión del usuario.\
+>Este apartado califica si , se añade más información de la estrictamente necesaria que recargue la visión del usuario.\
 La interfaz tiene una estética muy limpia y elimina todo elemento que no sea estrictamente necesario en su interfaz.\
 Como podemos observar en está imagen no se ve nada que no sea usable de forma muy directa.
 
