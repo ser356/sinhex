@@ -536,7 +536,12 @@ _**1. Visibilidad del estado del sistema**_
 Es decir la capacidad de emitir feedback al usuario.
 Después de usar durante un largo periodo de tiempo la app detecté diferente cuestiones:
 
-![img1](./imgs/heuristica/1/image1.png)
+<img src="./imgs/heuristica/1/image1.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
+" />
 
 >En todo momento se conoce en qué apartado te encuentras por ejemplo cuando vas al menú de ajustes, aparece un texto en la parte superior que nos indica que efectivamente estamos en el apartado de ajustes\
 El único aspecto negativo a comentar es que cuando añades al candidato no recibes ningún mensaje que te indique que se ha guardado con éxito sino que simplemente vuelves a la pantalla anterior.
@@ -550,7 +555,7 @@ Como aspecto negativo recalcar que la palabra recargar no se termina de entender
 _**3. Control y libertad del usuario**_
 
 >Está regla habla sobrero ofrecerle al usuario la posibilidad de hacer lo que desee, y darle la capacidad de rehacer las opciones que haya realizado por error.
-La app ofrece un botón de “paso atrás”, para solucionar posibles configuraciones erróneas.\
+La app ofrece un botón de “paso atrás”, para solucionar posibles configuraciones erróneas.
 
 
 _**4. Consistencia y estándares**_
@@ -559,7 +564,12 @@ _**4. Consistencia y estándares**_
 En este aspecto la app tiene un botón con un + que sirve par añadir, es un recurso muy bueno y que da entender la operación de adicción que posteriormente se va a ofrecer\ 
 Otro ejemplo de buenos estándares vuelve a ser la pantalla de ajustes, los iconos empleados para todos sus elementos son muy usados en otras aplicaciones y webs por lo tanto un usuario que no tenga experiencia en la app no tendrá problema en reconocer estos iconos.
 
-![img2](imgs/heuristica/1/image2.png)
+<img src="./imgs/heuristica/1/image2.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
+" />
 
 _**5. Prevención de errores**_
 
