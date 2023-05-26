@@ -26,7 +26,7 @@ _**API, AI, audience, Cupertino, Dart, Figma, flutter, hexadecimal, interface, M
 
 ## CONCEPTOS
 
-_**API, AI, audiencia,Cupertino, Dart, Figma,  flutter, hexadecimal, interfaz, Material Design, prototipo, sinestesia, Trello, WebDesign**_
+_**API, AI, audiencia,Cupertino, Dart, Figma, flutter, hexadecimal, interfaz, Material Design, prototipo, sinestesia, Trello, WebDesign**_
 
 ## Introducción
 
@@ -369,17 +369,18 @@ Pantallas accesibles: <a href="#loginform">LoginForm</a><br>
 
 ## StartScreen
 
-
 <img src="./imgs/design/image7.png" style="
 elevation: 10;
 margin-left: auto;
 margin-right: auto;
 width: 25%;
 ">
-<p> 
+
+<p>
 
 Pantalla Inicial, con conexión directa al resto de funcionalidades.<br>
 Pantallas accesibles: <a href="#loadcandidate">LoadCandidate</a>, <a href="#settings">Settings</a><br>
+
 </p>
 
 ## LoadCandidate
@@ -420,19 +421,18 @@ El acceso queda reservado a usuarios registrados.
 Cambio de contraseña.
 
 ![pwd](./vid/pwd.gif)
- 
 
 ### **Escenario 2**
 
 Cambio de correo electrónico.
 
-![pwd](./vid/email.gif) 
+![pwd](./vid/email.gif)
 
 ### **Escenario 3**
 
 Cambio de idioma.
 
-![pwd](./vid/lang.gif) 
+![pwd](./vid/lang.gif)
 
 <div style="page-break-after: always; visibility: hidden">
 
@@ -482,7 +482,7 @@ Los botones clicables de desplazamiento hacia atrás están disponibles están d
 
    <img src="./imgs/design/volveratras.png" style="width: 20%">
 
-   Disponible en la pantalla de resultado de la asociación, permite volver a la pantalla anterior.
+  Disponible en la pantalla de resultado de la asociación, permite volver a la pantalla anterior.
 
 - _**Botón Stadium en la parte inferior de la pantalla 'Recargar'.**_
 
@@ -525,18 +525,16 @@ De acuerdo con los criterios de Nielsen, la evaluación heurística ha seguido e
 
 ### **Evaluación Heurística 1**
 
+### _Usuario 1_: David Montero Hernandez DNI: 70901921M
 
-
-### _Usuario 1_: David DNI: ****678A IPO 
-
-> El flujo de uso será por tanto : Se accede al  sistema y se añade una imagen y se obtiene como resultado la imagen de vuelta más un sonido.\
-El método de evaluación que voy a usar es el de Nielsen, este  método consta de 10 reglas  las cuales tienen como objetivo detectar errores que no se detectan con pruebas de usuarios.
+> El flujo de uso será por tanto : Se accede al sistema y se añade una imagen y se obtiene como resultado la imagen de vuelta más un sonido.\
+> El método de evaluación que voy a usar es el de Nielsen, este método consta de 10 reglas las cuales tienen como objetivo detectar errores que no se detectan con pruebas de usuarios.
 
 _**1. Visibilidad del estado del sistema**_
 
->Consiste en darle al usuario información sobre las acciones que ha realizado, o de los fallos que está cometiendo.\
-Es decir la capacidad de emitir feedback al usuario.
-Después de usar durante un largo periodo de tiempo la app detecté diferente cuestiones:
+> Consiste en darle al usuario información sobre las acciones que ha realizado, o de los fallos que está cometiendo.\
+> Es decir la capacidad de emitir feedback al usuario.
+> Después de usar durante un largo periodo de tiempo la app detecté diferente cuestiones:
 
 <img src="./imgs/heuristica/1/image1.png" alt="img2" style="
 block: auto;
@@ -544,26 +542,25 @@ margin-left: auto;
 margin-right: auto;
 width: 25%;" />
 
->En todo momento se conoce en qué apartado te encuentras por ejemplo cuando vas al menú de ajustes, aparece un texto en la parte superior que nos indica que efectivamente estamos en el apartado de ajustes\
-El único aspecto negativo a comentar es que cuando añades al candidato no recibes ningún mensaje que te indique que se ha guardado con éxito sino que simplemente vuelves a la pantalla anterior.
+> En todo momento se conoce en qué apartado te encuentras por ejemplo cuando vas al menú de ajustes, aparece un texto en la parte superior que nos indica que efectivamente estamos en el apartado de ajustes\
+> El único aspecto negativo a comentar es que cuando añades al candidato no recibes ningún mensaje que te indique que se ha guardado con éxito sino que simplemente vuelves a la pantalla anterior.
 
 _**2. Coincidencia entre el sistema y el mundo real**_
 
->En este apartado evalúo si el sistema es comprensible desde el punto de vista de un usuario que lo usa por primera vez, sin tener automatismos adquiridos ni conocer en profundidad la app\
-La app ofrece mensajes claros y sin conceptos complicados , además son aspectos tangibles y fáciles de entender.\
-Como aspecto negativo recalcar que la palabra recargar no se termina de entender para qué sirve y habría que explicar algo más ese aspecto.
+> En este apartado evalúo si el sistema es comprensible desde el punto de vista de un usuario que lo usa por primera vez, sin tener automatismos adquiridos ni conocer en profundidad la app\
+> La app ofrece mensajes claros y sin conceptos complicados , además son aspectos tangibles y fáciles de entender.\
+> Como aspecto negativo recalcar que la palabra recargar no se termina de entender para qué sirve y habría que explicar algo más ese aspecto.
 
 _**3. Control y libertad del usuario**_
 
->Está regla habla sobrero ofrecerle al usuario la posibilidad de hacer lo que desee, y darle la capacidad de rehacer las opciones que haya realizado por error.
-La app ofrece un botón de “paso atrás”, para solucionar posibles configuraciones erróneas.
-
+> Está regla habla sobrero ofrecerle al usuario la posibilidad de hacer lo que desee, y darle la capacidad de rehacer las opciones que haya realizado por error.
+> La app ofrece un botón de “paso atrás”, para solucionar posibles configuraciones erróneas.
 
 _**4. Consistencia y estándares**_
 
->Este aspecto califica si la app usa elementos fácilmente reconocibles por la mayoría de los usuarios, es decir que sepas que un botón va a realizar la acción que sea por que ya los ha visto en otras apps.\
-En este aspecto la app tiene un botón con un + que sirve par añadir, es un recurso muy bueno y que da entender la operación de adicción que posteriormente se va a ofrecer\ 
-Otro ejemplo de buenos estándares vuelve a ser la pantalla de ajustes, los iconos empleados para todos sus elementos son muy usados en otras aplicaciones y webs por lo tanto un usuario que no tenga experiencia en la app no tendrá problema en reconocer estos iconos.
+> Este aspecto califica si la app usa elementos fácilmente reconocibles por la mayoría de los usuarios, es decir que sepas que un botón va a realizar la acción que sea por que ya los ha visto en otras apps.\
+> En este aspecto la app tiene un botón con un + que sirve par añadir, es un recurso muy bueno y que da entender la operación de adicción que posteriormente se va a ofrecer\
+> Otro ejemplo de buenos estándares vuelve a ser la pantalla de ajustes, los iconos empleados para todos sus elementos son muy usados en otras aplicaciones y webs por lo tanto un usuario que no tenga experiencia en la app no tendrá problema en reconocer estos iconos.
 
 <img src="./imgs/heuristica/1/image2.png" alt="img2" style="
 block: auto;
@@ -571,31 +568,28 @@ margin-left: auto;
 margin-right: auto;
 width: 25%;" />
 
-
 _**5. Prevención de errores**_
 
->Hay acciones que realiza el usuario que le pueden llevar a problemas en un futuro, estas situaciones tienen que ser controladas por el sistema para que no dé lugar a errores.\
-La app es consistente ante estos posibles errores, aunque no se me ocurren muchos errores posibles.\
-En un posible modelo funcional tendría que asegurar la carga de los elementos correctamnete , es decir que la imagen esté en el formato correcto por ejemplo.
+> Hay acciones que realiza el usuario que le pueden llevar a problemas en un futuro, estas situaciones tienen que ser controladas por el sistema para que no dé lugar a errores.\
+> La app es consistente ante estos posibles errores, aunque no se me ocurren muchos errores posibles.\
+> En un posible modelo funcional tendría que asegurar la carga de los elementos correctamnete , es decir que la imagen esté en el formato correcto por ejemplo.
 
 _**6. Reconocimiento en lugar de recuerdo**_
 
->Con el objetivo de hacer pantallas lo más limpias y estéticas posibles, en ocasiones dificultamos la experiencia del usuario con elementos crentes de affordance,  por ello debemos tener esto en cuenta y procurar que la carga mental que realice el usuario sea la mínima posible.\
-La app de mi compañero tiene un apartado de proyectos y dentro de él uno de proyectos recientes ese aspecto es muy positivo pues reduce la carga cognitiva del usuario a la hora de acceder a algún proyecto que frecuente mucho pues le aparecerá en media de la pantalla y con un solo toque a la misma accedes a él.\
-Una deficiencia que le encuentro a la aplicación es que, a la hora de introducir la imagen y que se genere la música no tenemos ningun boton que nos diga directamente que pulsando en él se vaya a reproducir el sonido, como podría ser un botón con una nota musical
-
+> Con el objetivo de hacer pantallas lo más limpias y estéticas posibles, en ocasiones dificultamos la experiencia del usuario con elementos crentes de affordance, por ello debemos tener esto en cuenta y procurar que la carga mental que realice el usuario sea la mínima posible.\
+> La app de mi compañero tiene un apartado de proyectos y dentro de él uno de proyectos recientes ese aspecto es muy positivo pues reduce la carga cognitiva del usuario a la hora de acceder a algún proyecto que frecuente mucho pues le aparecerá en media de la pantalla y con un solo toque a la misma accedes a él.\
+> Una deficiencia que le encuentro a la aplicación es que, a la hora de introducir la imagen y que se genere la música no tenemos ningun boton que nos diga directamente que pulsando en él se vaya a reproducir el sonido, como podría ser un botón con una nota musical
 
 _**7. Flexibilidad y eficiencia de uso**_
 
->Si una aplicación no se adapta a diferentes tipos de usuarios está teniendo carencia es ente apartado.\
-La información que maneja la app es muy técnica en algunos aspectos, por lo tanto un usuario que desconozca de  este concepto puede sentirse algo perdido, por lo tanto aportar algo de información sobre qué proceso se realiza para generar este sonido o algún ejemplo.
-
+> Si una aplicación no se adapta a diferentes tipos de usuarios está teniendo carencia es ente apartado.\
+> La información que maneja la app es muy técnica en algunos aspectos, por lo tanto un usuario que desconozca de este concepto puede sentirse algo perdido, por lo tanto aportar algo de información sobre qué proceso se realiza para generar este sonido o algún ejemplo.
 
 _**8. Estética y diseño minimalista**_
 
->Este apartado califica si , se añade más información de la estrictamente necesaria que recargue la visión del usuario.\
-La interfaz tiene una estética muy limpia y elimina todo elemento que no sea estrictamente necesario en su interfaz.\
-Como podemos observar en está imagen no se ve nada que no sea usable de forma muy directa.
+> Este apartado califica si , se añade más información de la estrictamente necesaria que recargue la visión del usuario.\
+> La interfaz tiene una estética muy limpia y elimina todo elemento que no sea estrictamente necesario en su interfaz.\
+> Como podemos observar en está imagen no se ve nada que no sea usable de forma muy directa.
 
 <img src="./imgs/heuristica/1/image3.png" alt="img2" style="
 block: auto;
@@ -603,24 +597,21 @@ margin-left: auto;
 margin-right: auto;
 width: 25%;" />
 
-
 _**9. Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores**_
 
->Es muy difícil prevenir todos los errores pues cuando llevas una app a los usuarios estos plantean situaciones que nunca hubieras imaginado, por lo tanto ayudar al usuario a reconocerlo y solucionarlos es muy importante.\
-Como mencioné anteriormente la funcionalidad de la aplicación está muy definida y es difícil que aparezcan errores.
-
+> Es muy difícil prevenir todos los errores pues cuando llevas una app a los usuarios estos plantean situaciones que nunca hubieras imaginado, por lo tanto ayudar al usuario a reconocerlo y solucionarlos es muy importante.\
+> Como mencioné anteriormente la funcionalidad de la aplicación está muy definida y es difícil que aparezcan errores.
 
 _**10. Ayuda y documentación**_
 
->Ante posibles dudas que tenga el usuario debe existir un apartado de ayuda, para evitar llamas al soporte.\
-La aplicación cuenta con un apartado de preguntas frecuentes ubicado en el apartado  de ajustes, no obstante el concepto de la aplicación el algo complejo , por lo tanto un apartado informativo en el login o en la página principal sería una opción muy a tener en cuenta.
-
+> Ante posibles dudas que tenga el usuario debe existir un apartado de ayuda, para evitar llamas al soporte.\
+> La aplicación cuenta con un apartado de preguntas frecuentes ubicado en el apartado de ajustes, no obstante el concepto de la aplicación el algo complejo , por lo tanto un apartado informativo en el login o en la página principal sería una opción muy a tener en cuenta.
 
 <div style="page-break-after: always; visibility: hidden">
 
 ### **Evaluación Heurística 2**
 
-### _Usuario 2_
+### _Usuario 2_ Abel Hernández Lorenzo A2
 
 _**1. Visibilidad del estado del sistema**_
 
@@ -656,7 +647,13 @@ width: 25%;"/>
 
 _**2. Coincidencia entre el sistema y el mundo real**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+> Indica correctamente las opciones dentro de la aplicación para que la gran mayoría de usuarios pueda navegar por esta sin problema. Además usa iconos reconocibles además del texto que complementa a dichos iconos.
+
+<img src="./imgs/heuristica/2/image4.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
 
 _**3. Control y libertad del usuario**_
 
@@ -707,7 +704,6 @@ width: 25%;" />
 _**4. Consistencia y estándares**_
 
 > Se muestra en toda la aplicación una tonalidad de colores estandarizada para toda la app. Los colores más característicos de esta aplicación son:
-
 - #26876b
 - #17caf2
 - #eea244
@@ -717,27 +713,44 @@ _**4. Consistencia y estándares**_
 
 _**5. Prevención de errores**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+> Tiene adecuadamente configurado la prevención de errores en la pantalla principal para evitar que estos se den.\
+> Sin embargo en las opciones de la cuenta no se muestra la prevención de errores a la hora de modificar datos críticos en la cuenta del usuario(correo, contraseña).
 
 _**6. Reconocimiento en lugar de recuerdo**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+> Están bien representadas las distintas opciones para que el usuario vea de un vistazo las opciones y acciones disponibles y acceda a la que más se adapte a su necesidad.\
+> Además viene todo bien especificado en la misma interfaz. Para evitar tener que recordar información de una ventana a otra.
 
 _**7. Flexibilidad y eficiencia de uso**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+> Los accesos rápidos a aquellos proyectos recientes hace que se reduzca el tiempo de interacción del usuario para acceder a estos.\
+> Evitando así que el usuario tenga que buscar el proyecto deseado en otros apartados.
 
 _**8. Estética y diseño minimalista**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+> Usa debidamente iconos simples sin mucha decoración. En gran parte de la aplicación muestra únicamente lo esencial. Cuenta con una interfaz organizada.
 
 _**9. Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+> No muestra ninguna ventana con errores o como soluciona estos.\
+> Por ejemplo se podría mostrar un ejemplo de error si un usuario intenta cambiar el correo al mismo que tenía registrado o para el caso de la contraseña igual:
+
+<img src="./imgs/heuristica/2/image10.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
 
 _**10. Ayuda y documentación**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+> Se muestra que existe un apartado para las preguntas frecuentes de los usuarios.\
+> Aunque no se ha creado la ventana de ejemplo con varias posibles preguntas de ejemplo. Además si pulsas sobre esta opción te redirecciona al GitHub.
+
+<img src="./imgs/heuristica/2/image12.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
 
 <div style="page-break-after: always; visibility: hidden">
 
@@ -785,10 +798,7 @@ _**10. Ayuda y documentación**_
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
 
-
-
 <div style="page-break-after: always; visibility: hidden">
-
 
 ## **Implementación de la solución**
 
@@ -797,5 +807,3 @@ Una vez realizada la evaluación heurística y recibido el feedback de los usuar
 Para ello se ha empleado el framework Flutter, que permite desarrollar aplicaciones multiplataforma, es decir, que se pueden ejecutar en Android, iOS, Windows, Mac, Linux y web.
 
 La evolución de la aplicación se puede ver en el siguiente [repositorio](https://github.com/ser356/sinhex) de GitHub.
-
-
