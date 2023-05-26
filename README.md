@@ -697,7 +697,6 @@ width: 25%;" />
 _**4. Consistencia y estándares**_
 
 > Se muestra en toda la aplicación una tonalidad de colores estandarizada para toda la app. Los colores más característicos de esta aplicación son:
-
 - #26876b
 - #17caf2
 - #eea244
