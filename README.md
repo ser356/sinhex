@@ -624,7 +624,35 @@ La aplicación cuenta con un apartado de preguntas frecuentes ubicado en el apar
 
 _**1. Visibilidad del estado del sistema**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+> Se sabe bien en qué parte de la aplicación te encuentras en cada momento, mostrando las secciones en las que se encuentra el usuario tanto en las cabeceras de cada sección como en los iconos empleados.
+
+<img src="./imgs/heuristica/2/image1.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
+
+<img src="./imgs/heuristica/2/image3.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
+
+> Además se producen correctamente cambios al pulsar sobre algún icono, menú u opción redirigiendo correctamente al usuario a la opción seleccionada.
+
+<img src="./imgs/heuristica/2/image2.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
+
+> → Pulsamos sobre opciones →
+
+<img src="./imgs/heuristica/2/image5.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;"/>
 
 _**2. Coincidencia entre el sistema y el mundo real**_
 
@@ -632,11 +660,60 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
 
 _**3. Control y libertad del usuario**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+> Se indica correctamente en casi todas las situaciones cómo volver hacia atrás y cómo moverse dentro de la aplicación.\ 
+Además se muestran las opciones para volver a la acción anterior o cancelar de manera adecuada:
+
+<img src="./imgs/heuristica/2/image6.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
+
+Problemas:
+A la hora de presionar sobre algunos campos para volver hacia atrás te redirecciona continuamente a la pantalla principal. Hay acciones que sería mejor volver a la ventana anterior simplemente. Ejemplo:
+
+En la venta de Resultado pasa:
+
+<img src="./imgs/heuristica/2/image6.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
+
+→ Presionas ir hacia atrás →
+
+<img src="./imgs/heuristica/2/image8.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
+
+Sería mejor:
+
+<img src="./imgs/heuristica/2/image6.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
+
+→ Presionas ir hacia atrás →
+
+<img src="./imgs/heuristica/2/image11.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 25%;" />
 
 _**4. Consistencia y estándares**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+> Se muestra en toda la aplicación una tonalidad de colores estandarizada para toda la app. Los colores más característicos de esta aplicación son:
+
+- #26876b
+- #17caf2
+- #eea244
+- #000000
+
+> Lo mismo sucede para la fuente empleada y los componentes(botones, iconos) de la aplicación.
 
 _**5. Prevención de errores**_
 
