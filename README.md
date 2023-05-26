@@ -658,7 +658,8 @@ width: 25%;" />
 
 _**3. Control y libertad del usuario**_
 
-> Se indica correctamente en casi todas las situaciones cómo volver hacia atrás y cómo moverse dentro de la aplicación.\ Además se muestran las opciones para volver a la acción anterior o cancelar de manera adecuada:
+> Se indica correctamente en casi todas las situaciones cómo volver hacia atrás y cómo moverse dentro de la aplicación.\ 
+Además se muestran las opciones para volver a la acción anterior o cancelar de manera adecuada:
 
 <img src="./imgs/heuristica/2/image6.png" alt="img2" style="
 block: auto;
@@ -672,32 +673,25 @@ A la hora de presionar sobre algunos campos para volver hacia atrás te redirecc
 En la venta de Resultado pasa:
 
 <img src="./imgs/heuristica/2/image6.png" alt="img2" style="
-block: auto;
-margin-left: auto;
-margin-right: auto;
+float: left;
 width: 25%;" />
 
 → Presionas ir hacia atrás →
 
 <img src="./imgs/heuristica/2/image8.png" alt="img2" style="
-block: auto;
-float: left;
-
+float: right;
 width: 25%;" />
 
 Sería mejor:
 
 <img src="./imgs/heuristica/2/image6.png" alt="img2" style="
-block: auto;
 float: left;
 width: 25%;" />
 
 → Presionas ir hacia atrás →
 
 <img src="./imgs/heuristica/2/image11.png" alt="img2" style="
-block: auto;
-margin-left: auto;
-margin-right: auto;
+float: right;
 width: 25%;" />
 
 _**4. Consistencia y estándares**_
