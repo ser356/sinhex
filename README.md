@@ -807,3 +807,19 @@ Una vez realizada la evaluación heurística y recibido el feedback de los usuar
 Para ello se ha empleado el framework Flutter, que permite desarrollar aplicaciones multiplataforma, es decir, que se pueden ejecutar en Android, iOS, Windows, Mac, Linux y web.
 
 La evolución de la aplicación se puede ver en el siguiente [repositorio](https://github.com/ser356/sinhex) de GitHub.
+
+### **Mejoras añadidas**
+
+Tal y como muestra la imagen, se ha aceptado la sugerencia del usuario 2 y ahora se muestra un mensaje de error cuando no se ha añadido ninguna imagen.
+
+![Alt text](image.png)
+
+El código en si mismo evita que el tamaño de imagen sea demasiado grande tal y como se muestra en la siguiente imagen, lo que tambien maneja el error propuesto por el usuario 1.
+
+![Alt text](image1.png)
+
+Se ha añadido el objeto context en los retornos de la arrow en la AppBar para que al retornar se vuelva simplemente a la pantalla anterior y no a la pantalla principal.
+
+![Alt text](image3.png)
+
+Se ha completado la pantalla de ayuda y documentación, añadiendo preguntas frecuentes y un apartado de contacto.

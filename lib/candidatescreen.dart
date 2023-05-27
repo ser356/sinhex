@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:sinhex/startviewscreen.dart';
 import 'hex.dart';
 
 class CandidateScreen extends StatefulWidget {
@@ -30,15 +31,17 @@ class _MiWidgetState extends State<CandidateScreen> {
         ),
       ),
       body: ResponsiveRowColumn(
+        columnPadding: EdgeInsets.all(20),
         columnMainAxisAlignment: MainAxisAlignment.center,
         layout: ResponsiveRowColumnType.COLUMN,
         children: [
           ResponsiveRowColumnItem(
             child: Center(
               child: Card(
+                  elevation: 10,
                   child: CandidateWidget(
-                objeto: widget.objeto,
-              )),
+                    objeto: widget.objeto,
+                  )),
             ),
           ),
         ],
@@ -60,17 +63,20 @@ class _CandidateWidgetState extends State<CandidateWidget> {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> imageList = [];
+    imageList.add(Image.asset(widget.objeto));
     return ResponsiveRowColumn(
       layout: ResponsiveRowColumnType.COLUMN,
-      columnSpacing: 20,
-      columnPadding: EdgeInsets.all(20),
+      columnSpacing: 10,
+      columnPadding: EdgeInsets.all(10),
       children: [
         ResponsiveRowColumnItem(
             child: Text(
-          "Candidato",
+          "Imagen a Procesar",
           style: TextStyle(
-            color: '6C928A'.toColor(),
-            fontSize: 20,
+            color: '012016'.toColor(),
+            fontSize: 30,
+            decorationThickness: 10,
           ),
         )),
         ResponsiveRowColumnItem(
@@ -81,9 +87,44 @@ class _CandidateWidgetState extends State<CandidateWidget> {
               widget.objeto,
             ),
             fit: BoxFit.contain,
-            height: 200,
+            width: 200,
+            height: 300,
           ),
         )),
+        ResponsiveRowColumnItem(
+            child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => StartViewScreen()),
+              );
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                content: Text("Procesado Correctamente"),
+                duration: Duration(seconds: 2),
+              ));
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: '012016'.toColor(),
+            ),
+            child: Text(
+              "Procesar",
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+          SizedBox(
+            width: 50,
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text("Proceso Cancelado"),
+                  duration: Duration(seconds: 2),
+                ));
+              },
+              child: Text("Cancelar")),
+        ])),
       ],
     );
   }
