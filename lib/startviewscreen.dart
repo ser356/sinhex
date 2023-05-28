@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:sinhex/model/dataHandler.dart';
+import 'package:sinhex/settingsmain.dart';
 import 'hex.dart';
 import 'candidatescreen.dart';
+
+var dh = DataHandler();
 
 class StartViewScreen extends StatefulWidget {
   const StartViewScreen({Key? key});
@@ -44,7 +48,8 @@ class _StartViewWidgetState extends State<StartViewWidget> {
           automaticallyImplyLeading: false,
           backgroundColor: "222222".toColor(),
           title: ResponsiveRowColumn(
-            rowMainAxisAlignment: MainAxisAlignment.end,
+            columnSpacing: 40,
+            rowMainAxisAlignment: MainAxisAlignment.spaceBetween,
             layout: ResponsiveRowColumnType.ROW,
             children: [
               ResponsiveRowColumnItem(
@@ -53,50 +58,55 @@ class _StartViewWidgetState extends State<StartViewWidget> {
                 rowFit: FlexFit.tight,
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.pop(context);
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SettingsMain()));
                   },
                   child: CircleAvatar(
                     // set circular shape
-                    radius: 20,
+                    radius: 22,
+                    backgroundImage: Image.asset(dh.defaultpfp).image,
                     // set background image and its fit
-                    backgroundImage:
-                        Image.network("https://i.imgur.com/BoN9kdC.png").image,
                   ),
                 ),
-              ),
+              )
             ],
           ),
         ),
-        body: const Center(
-          child: ResponsiveRowColumn(
-            columnMainAxisAlignment: MainAxisAlignment.center,
-            columnSpacing: 20,
-            layout: ResponsiveRowColumnType.COLUMN,
-            children: [
-              ResponsiveRowColumnItem(
-                rowFlex: 2,
-                columnFlex: 2,
-                rowFit: FlexFit.tight,
-                child: SizedBox(
-                  height: 300,
-                  child: Card(
-                    elevation: 10,
-                    child: SuperiorWidget(),
+        body: Padding(
+          padding: const EdgeInsets.all(5.0),
+          child: const Center(
+            child: ResponsiveRowColumn(
+              columnMainAxisAlignment: MainAxisAlignment.center,
+              columnSpacing: 10,
+              layout: ResponsiveRowColumnType.COLUMN,
+              children: [
+                ResponsiveRowColumnItem(
+                  rowFlex: 2,
+                  columnFlex: 2,
+                  rowFit: FlexFit.tight,
+                  child: SizedBox(
+                    height: 300,
+                    child: Card(
+                      elevation: 10,
+                      child: SuperiorWidget(),
+                    ),
                   ),
                 ),
-              ),
-              ResponsiveRowColumnItem(
-                  child: Padding(
-                padding: EdgeInsets.only(bottom: 20),
-                child: SizedBox(
-                  height: 170,
-                  child: Card(
-                    elevation: 10,
-                    child: InferiorWidget(),
+                ResponsiveRowColumnItem(
+                    child: Padding(
+                  padding: EdgeInsets.only(bottom: 20),
+                  child: SizedBox(
+                    height: 500,
+                    child: Card(
+                      elevation: 10,
+                      child: InferiorWidget(),
+                    ),
                   ),
-                ),
-              ))
-            ],
+                ))
+              ],
+            ),
           ),
         ));
   }
@@ -157,7 +167,7 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
           child: SizedBox(
             width: double.infinity,
             child: Padding(
-              padding: const EdgeInsets.only(top: 0, bottom: 220.0, left: 10),
+              padding: const EdgeInsets.only(top: 4, bottom: 220.0, left: 10),
               child: FittedBox(
                 alignment: Alignment.topLeft,
                 fit: BoxFit.none,
@@ -174,7 +184,7 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
           columnFlex: 2,
           rowFit: FlexFit.tight,
           child: Padding(
-            padding: const EdgeInsets.only(top: 5, bottom: 150.0, right: 10),
+            padding: const EdgeInsets.only(top: 4, bottom: 150.0, right: 10),
             child: FittedBox(
               alignment: Alignment.topRight,
               fit: BoxFit.none,
@@ -236,14 +246,6 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
                     setState(() {
                       print(path);
                       if (path != '') {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => CandidateScreen(
-                              objeto: path,
-                            ),
-                          ),
-                        );
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
@@ -262,14 +264,6 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
                     setState(() {
                       print(path);
                       if (path != '') {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => CandidateScreen(
-                              objeto: path,
-                            ),
-                          ),
-                        );
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
