@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:sinhex/candidatescreen.dart';
 import 'package:sinhex/model/dataHandler.dart';
 import 'package:sinhex/settingsmain.dart';
 import 'hex.dart';
@@ -54,8 +55,9 @@ class _StartViewWidgetState extends State<StartViewWidget> {
             backgroundColor: "222222".toColor(),
             title: ResponsiveRowColumn(
               columnSpacing: 40,
-              rowMainAxisAlignment: MainAxisAlignment.spaceBetween,
+              rowMainAxisAlignment: MainAxisAlignment.start,
               layout: ResponsiveRowColumnType.ROW,
+              rowPadding: EdgeInsets.only(left: 350),
               children: [
                 ResponsiveRowColumnItem(
                   rowFlex: 2,
@@ -71,7 +73,8 @@ class _StartViewWidgetState extends State<StartViewWidget> {
                     child: CircleAvatar(
                       // set circular shape
                       radius: 22,
-                      backgroundImage: Image.asset(dh.defaultpfp).image,
+                      backgroundColor: "222222".toColor(),
+                      child: Icon(Icons.settings, color: Colors.white),
                       // set background image and its fit
                     ),
                   ),
@@ -174,7 +177,7 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
           child: SizedBox(
             width: double.infinity,
             child: Padding(
-              padding: const EdgeInsets.only(top: 0, bottom: 320, left: 15),
+              padding: const EdgeInsets.only(top: 2, bottom: 320, left: 15),
               child: FittedBox(
                 alignment: Alignment.topLeft,
                 fit: BoxFit.none,
@@ -192,7 +195,7 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
           rowFit: FlexFit.tight,
           child: Padding(
             padding: const EdgeInsets.only(
-              top: 1,
+              top: 2,
               bottom: 320.0,
               right: 15,
             ),
@@ -244,6 +247,16 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
                     setState(() {
                       print(path);
                       if (path != '') {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text('Imagen cargada correctamente.'),
+                          ),
+                        );
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    CandidateScreen(objeto: path)));
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
@@ -261,8 +274,17 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
                   onTap: () async {
                     path = await openCamera();
                     setState(() {
-                      print(path);
                       if (path != '') {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text('Imagen cargada correctamente.'),
+                          ),
+                        );
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    CandidateScreen(objeto: path)));
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(

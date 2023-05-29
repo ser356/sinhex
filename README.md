@@ -123,6 +123,14 @@ Tal y como se menciona en el apartado anterior, se ha decidido incluir nuevos ti
 
 La audiencia no ha sido capaz de realizar asociaciones de números con colores, y ¿qué mejor que el sistema hexadecimal para ello?
 
+## Entrevistas con músicos
+
+Se ha realizado una entrevista a un músico profesional para obtener una visión más amplia de la necesidad de la aplicación.
+
+Andrés Vidal Martín Martín, músico profesional e informático, ha sido entrevistado para obtener una visión más amplia de la necesidad de la aplicación.
+
+Propone el círculo de quintas mayores como base para la generación de melodías. Permite calcular de forma procedural las notas que se van a utilizar en la melodía dado un tono inicial.
+
 ## Elección del nombre
 
 El juego de palabras entre sinestesia y hexadecimal proporciona el nombre de la aplicación.
@@ -139,7 +147,6 @@ El resultado es un video con una animación de fondo y un texto que se va escrib
 
 Realmente no es una aplicación que compite con sinhex, pero sí que realiza asociaciones sinestésicas de algún modo puesto que convierte texto en audio.
 
-<img src="./imgs/synesthesia.png" style="">
 
 <div style="page-break-after: always; visibility: hidden">
 
@@ -169,9 +176,27 @@ El creador asistió a un taller de APIs para reforzar el conocimiento sobre las 
 
 Finalmente se desechó la idea por ser poco innovadora y no tener capacidad real de competir en el mercado con el resto de rivales (existen aplicaciones que consumen la API de Spotify de forma mucho más eficiente, sistemática y que están verdaderamente asentados).
 
+A continuación se muestra un pantallazo de lo que fue el prototipo web.
+
+<img src="./imgs/sets/sets.png" style="
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;"/>
+
+Y un enlace a un [repositorio](https://github.com/ser356/sets) con el código fuente.
+
 <div style="page-break-after: always; visibility: hidden">
 
 ## Diseño de la Interfaz de Usuario
+
+Se comenzó con un pequeño [Wireframe](https://wireframe.cc/eTcUOJ) de la aplicación que abarcaba lo que sería la StartScreen, la pantalla del candidato y los formularios de inicio de sesión de manera abstracta.
+
+<img src="./imgs/wireframe.png" style="
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 25%;"/>
 
 Detalle de la interfaz del usuario así como evaluaciones heurísticas y de usabilidad por parte de 3 usuarios anónimos antes de la implementación.
 
@@ -212,6 +237,8 @@ Acceso a Figma: [Figma SIN(#)](<https://www.figma.com/file/4lvWH1rp3yNchfrisyp8S
 Navegación por la Interfaz: [sin# TUTORIAL](https://youtu.be/ofFsVAbTR2o)
 
 Acceso a Trello: [Trello](https://trello.com/b/ZMaSyArU/sinhex)
+
+Wireframe: [Wireframe](https://wireframe.cc/eTcUOJ)
 
 <div style="page-break-after: always; visibility: hidden">
 
@@ -383,6 +410,8 @@ Pantallas accesibles: <a href="#loadcandidate">LoadCandidate</a>, <a href="#sett
 
 </p>
 
+<div style="page-break-after: always; visibility: hidden">
+
 ## LoadCandidate
 
 <img src="./imgs/design/image9.png" style="
@@ -422,6 +451,8 @@ Cambio de contraseña.
 
 ![pwd](./vid/pwd.gif)
 
+<div style="page-break-after: always; visibility: hidden">
+
 ### **Escenario 2**
 
 Cambio de correo electrónico.
@@ -445,6 +476,8 @@ Cambio de foto de perfil.
 ### **Escenario 5**
 
 Salir de la aplicación.
+
+<div style="page-break-after: always; visibility: hidden">
 
 ### **Escenario 6**
 
@@ -515,7 +548,11 @@ De acuerdo con los criterios de Nielsen, la evaluación heurística ha seguido e
 7. Flexibilidad y eficiencia de uso:
    > Hotkeys, atajos, accesos directos, etc.
 8. Estética y diseño minimalista:
+
    > Los diálogos no deben contener información irrelevante o rara vez necesaria. Cada unidad extra de información en un diálogo compite con las unidades relevantes de información y disminuye su visibilidad relativa. Se siguenn principios de diseño establecidos.
+
+   <div style="page-break-after: always; visibility: hidden">
+
 9. Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores:
    > Los mensajes de error deben ser expresados en lenguaje claro (sin códigos), indicar con precisión el problema y sugerir una solución constructiva.
 10. Ayuda y documentación:
@@ -551,6 +588,8 @@ _**2. Coincidencia entre el sistema y el mundo real**_
 > La app ofrece mensajes claros y sin conceptos complicados , además son aspectos tangibles y fáciles de entender.\
 > Como aspecto negativo recalcar que la palabra recargar no se termina de entender para qué sirve y habría que explicar algo más ese aspecto.
 
+<div style="page-break-after: always; visibility: hidden">
+
 _**3. Control y libertad del usuario**_
 
 > Está regla habla sobrero ofrecerle al usuario la posibilidad de hacer lo que desee, y darle la capacidad de rehacer las opciones que haya realizado por error.
@@ -574,6 +613,8 @@ _**5. Prevención de errores**_
 > La app es consistente ante estos posibles errores, aunque no se me ocurren muchos errores posibles.\
 > En un posible modelo funcional tendría que asegurar la carga de los elementos correctamnete , es decir que la imagen esté en el formato correcto por ejemplo.
 
+<div style="page-break-after: always; visibility: hidden">
+
 _**6. Reconocimiento en lugar de recuerdo**_
 
 > Con el objetivo de hacer pantallas lo más limpias y estéticas posibles, en ocasiones dificultamos la experiencia del usuario con elementos crentes de affordance, por ello debemos tener esto en cuenta y procurar que la carga mental que realice el usuario sea la mínima posible.\
@@ -596,10 +637,12 @@ block: auto;
 margin-left: auto;
 margin-right: auto;
 width: 25%;" />
+<div style="page-break-after: always; visibility: hidden">
 
 _**9. Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores**_
 
 > Es muy difícil prevenir todos los errores pues cuando llevas una app a los usuarios estos plantean situaciones que nunca hubieras imaginado, por lo tanto ayudar al usuario a reconocerlo y solucionarlos es muy importante.\
+
 > Como mencioné anteriormente la funcionalidad de la aplicación está muy definida y es difícil que aparezcan errores.
 
 _**10. Ayuda y documentación**_
@@ -645,6 +688,8 @@ margin-left: auto;
 margin-right: auto;
 width: 25%;"/>
 
+<div style="page-break-after: always; visibility: hidden">
+
 _**2. Coincidencia entre el sistema y el mundo real**_
 
 > Indica correctamente las opciones dentro de la aplicación para que la gran mayoría de usuarios pueda navegar por esta sin problema. Además usa iconos reconocibles además del texto que complementa a dichos iconos.
@@ -657,8 +702,8 @@ width: 25%;" />
 
 _**3. Control y libertad del usuario**_
 
-> Se indica correctamente en casi todas las situaciones cómo volver hacia atrás y cómo moverse dentro de la aplicación.\ 
-Además se muestran las opciones para volver a la acción anterior o cancelar de manera adecuada:
+> Se indica correctamente en casi todas las situaciones cómo volver hacia atrás y cómo moverse dentro de la aplicación.\
+> Además se muestran las opciones para volver a la acción anterior o cancelar de manera adecuada:
 
 <img src="./imgs/heuristica/2/image6.png" alt="img2" style="
 block: auto;
@@ -704,6 +749,7 @@ width: 25%;" />
 _**4. Consistencia y estándares**_
 
 > Se muestra en toda la aplicación una tonalidad de colores estandarizada para toda la app. Los colores más característicos de esta aplicación son:
+
 - #26876b
 - #17caf2
 - #eea244
@@ -760,43 +806,49 @@ width: 25%;" />
 
 _**1. Visibilidad del estado del sistema**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>La interfaz no presenta un menú claramente visible que permita al usuario acceder a las diferentes opciones disponibles en la página principal.\
+No obstante, esta estructura se justifica por el enfoque centrado en una única página desde la cual se ejecutan todas las funciones de la aplicación.\
+Sin embargo, se sugiere mejorar la visibilidad del menú de ajustes, actualmente representado por un botón en blanco, proponiendo la inclusión de un ícono como un engranaje, que resultaría más intuitivo para indicar la opción de ajustes.
 
 _**2. Coincidencia entre el sistema y el mundo real**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>El sistema utiliza un lenguaje claro y actual, facilitando la comprensión por parte de los usuarios. Se destaca la posibilidad de cambiar el idioma de la aplicación, lo cual contribuye a adaptarla a las preferencias y necesidades del usuario.
 
 _**3. Control y libertad del usuario**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>Se garantiza que los usuarios cuenten con la capacidad de deshacer acciones erróneas o retroceder en cualquier momento, brindando así un sentido de control y libertad.\
+Se destacan los pasos de confirmación, como solicitar la contraseña actual antes de realizar un cambio, lo cual genera una sensación de seguridad.
 
 _**4. Consistencia y estándares**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>La aplicación mantiene un diseño consistente a lo largo de todas sus ventanas, con variaciones mínimas en la presentación de la información, pero manteniendo constantes los elementos importantes. Se observa una uniformidad en aspectos como los colores, el logo y el estilo, lo cual contribuye a la coherencia visual.
 
 _**5. Prevención de errores**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>La aplicación se presenta de manera sencilla y simplificada, lo que permite a los usuarios llevar a cabo las tareas de forma intuitiva, minimizando así la posibilidad de cometer errores.
 
 _**6. Reconocimiento en lugar de recuerdo**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>El diseño de la página es claro y ofrece instrucciones precisas, facilitando el reconocimiento de los pasos necesarios para llevar a cabo la mayoría de las acciones.
 
 _**7. Flexibilidad y eficiencia de uso**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>La aplicación ha sido diseñada para minimizar el número de pasos requeridos en la realización de las funciones, lo que permite una experiencia eficiente para los usuarios. Aunque su funcionalidad está limitada principalmente a la carga de imágenes, cumple esta tarea de manera elegante y efectiva.
 
 _**8. Estética y diseño minimalista**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>La aplicación sigue una estética minimalista, evitando sobrecargar la pantalla principal.\
+Se sugiere mejorar la utilización del espacio en la pestaña de ajustes, ya que actualmente solo utiliza la mitad del espacio disponible.\
+Esto se evidencia aún más en la pestaña de opciones de cuenta, donde las opciones ocupan solo una cuarta parte de la ventana.\
+Aumentar el tamaño de las opciones permitiría una visualización más clara y menos agobiante para los usuarios.
 
 _**9. Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>No se proporciona retroalimentación o mensajes de alerta claros para indicar si una tarea se ha realizado correctamente o no. Por ejemplo, no se conoce el comportamiento de la aplicación si se intenta cargar un archivo distinto a una imagen. Se sugiere implementar mensajes o indicadores que ayuden a los usuarios a reconocer, diagnosticar y solucionar posibles errores.
 
 _**10. Ayuda y documentación**_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+>La aplicación cuenta con varios apartados en el menú de ajustes que permiten buscar información sobre cómo realizar tareas específicas. Además, se destaca la opción de acceder a un tutorial que explica el uso de la aplicación. Estas características se consideran beneficiosas, especialmente para usuarios menos familiarizados con la tecnología, quienes podrían encontrar dificultades al utilizarla.
 
 <div style="page-break-after: always; visibility: hidden">
 
@@ -810,16 +862,232 @@ La evolución de la aplicación se puede ver en el siguiente [repositorio](https
 
 ### **Mejoras añadidas**
 
+
+
+En todas las evaluaciones heurísticas se hace evidente la necesidad de añadir un mensaje de error cuando no se ha añadido ninguna imagen, por lo que se ha añadido un mensaje de error en la ventana flotante.
+
+<img src="./imgs/final/flotante.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 35%;" />
+
 Tal y como muestra la imagen, se ha aceptado la sugerencia del usuario 2 y ahora se muestra un mensaje de error cuando no se ha añadido ninguna imagen.
 
-![Alt text](image.png)
+<img src="./image.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 35%;" />
 
 El código en si mismo evita que el tamaño de imagen sea demasiado grande tal y como se muestra en la siguiente imagen, lo que tambien maneja el error propuesto por el usuario 1.
 
-![Alt text](image1.png)
+<img src="./image1.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 35%;" />
 
 Se ha añadido el objeto context en los retornos de la arrow en la AppBar para que al retornar se vuelva simplemente a la pantalla anterior y no a la pantalla principal.
 
-![Alt text](image3.png)
+<img src="./image3.png" alt="img2" style="
+block: auto;
+margin-left: auto;
+margin-right: auto;
+width: 35%;" />
 
-Se ha completado la pantalla de ayuda y documentación, añadiendo preguntas frecuentes y un apartado de contacto.
+Existen diferencias con respecto al diseño propuesto en el prototipo, debido a que flutter no soporta ciertas funcionalidades de manera nativa, por lo que se ha tenido que adaptar el diseño a las funcionalidades que ofrece el framework.
+
+A continuación se muestran capturas de pantalla de la aplicación:
+
+## SplashScreen Final
+
+<img src="./imgs/final/%20(3).png" style="
+elevation: 10;
+margin-left: auto;
+margin-right: auto;
+width: 25%;
+">
+
+<p style="
+text-align: top;
+font-size: 20px;
+font-style: italic;
+color: grey;
+">
+Pantalla que aparece al iniciar la App.<br>
+En la implementación servirá para realizar
+las cargas antes del inicio
+</p>
+
+## LoginForm Final
+
+<img src="imgs/final/ (6).png" style="
+elevation: 10;
+margin-left: auto;
+margin-right: auto;
+width: 28%;
+">
+
+<p style="
+text-align: top;
+font-size: 20px;
+font-style: italic;
+color: grey;
+">
+Inicio de Sesión<br>
+Pantallas accesibles: <a href="#registroform-final">RegistroForm</a>, <a href="#startscreen-final">StartScreen</a><br>
+</p>
+
+<div style="page-break-after: always; visibility: hidden">
+
+## Settings Final
+
+<img src="./imgs/final/ (8).png" style="
+elevation: 10;
+margin-left: auto;
+margin-right: auto;
+width: 25%;
+">
+
+<p style="
+text-align: top;
+font-size: 20px;
+font-style: italic;
+color: grey;
+">
+ListView con acceso a múltiples funciones de
+configuración.<br>Pantallas accesibles: <a href='#accountsettings-final'>AccountSettings</a>, <a href="#faq-final">FAQ</a>, <a href="#tutorial-final">Tutorial</a>,
+<a href="#salir-final">Salir</a>.
+<br>
+</p>
+
+<div style="page-break-after: always; visibility: hidden">
+
+## _Desglose de los Ajustes Final:_
+
+### **AccountSettings Final**
+
+<img src="./imgs/final/ (9).png" style="
+width: 20%;
+">
+
+<div style="page-break-after: always; visibility: hidden">
+
+1. #### **Cambiar Foto de Perfil Final**
+
+   Se ha implementado un selector de imágenes para la aplicación.
+
+   <img src="./imgs/final/ (10).png" style="width: 20%;">
+
+2. #### **Cambiar Correo Electrónico Final**
+
+   Permite modificar el correo electrónico asociado a la cuenta.
+
+   <img src="./imgs/final/ (12).png" style="width: 20%;">
+
+<div style="page-break-after: always; visibility: hidden">
+
+3. #### **Cambiar Contraseña Final**
+
+   Permite modificar la contraseña asociada a la cuenta.
+
+   <img src="./imgs/final/ (2).png" style="width: 20%;">
+
+### **FAQ**
+
+No es una pantalla perse, sino un enlace a GitHub con la documentación de la aplicación.
+
+### **Tutorial**
+
+No es una pantalla perse, sino un enlace a YouTube con un ejemplo de uso de la aplicación.
+
+### **Salir**
+
+Proporciona un Logout de la aplicación. Se vuelve a la pantalla de inicio de sesión.
+
+<div style="page-break-after: always; visibility: hidden">
+
+## RegistroForm
+
+<img src="./imgs/final/(13).png" style="
+elevation: 10;
+margin-left: auto;
+margin-right: auto;
+width: 25%;
+">
+
+<p style="
+text-align: top;
+font-size: 20px;
+font-style: italic;
+color: grey;
+">
+Registro en el Sistema<br>
+Pantallas accesibles: <a href="#loginform-final">LoginForm</a><br>
+</p>
+
+## StartScreen
+
+<img src="./imgs/final/ (1).png" style="
+elevation: 10;
+margin-left: auto;
+margin-right: auto;
+width: 25%;
+">
+
+<p>
+
+Pantalla Inicial, con conexión directa al resto de funcionalidades.<br>
+Pantallas accesibles: <a href="#loadcandidate-final">LoadCandidate</a>, <a href="#settings-final">Settings</a><br>
+
+</p>
+
+## LoadCandidate
+
+<img src="./imgs/final/candidate.png" style="
+elevation: 10;
+margin-left: auto;
+margin-right: auto;
+width: 20%;
+">
+
+<p style="
+text-align: top;
+font-size: 20px;
+font-style: italic;
+color: grey;
+">
+La parte de lógica de negocio de la aplicación
+subyace en este apartado.<br>Se carga el candidato
+y se realiza la asociación.<br>
+Pantallas accesibles: <a href="#startscreen-final">StartScreen</a><br>
+</p>
+
+<div style="page-break-after: always; visibility: hidden">
+
+</div>
+
+## **Conclusiones y posible funcionalidad futura**
+
+**sinhex** puede llegar a convertirse en una aplicación factible empleando Teoría de Códigos.
+
+El proceso que se realizará a futuro es el siguiente:
+
+Se analizará la predominancia de color de cada imagen en base al brillo de la misma.
+
+Una vez establecido el color dominante, se asociará con una tonalidad.
+
+Aquí es donde entra la Teoría de Códigos.
+
+Un código cíclico es aquel formado por permutaciones de cada palabra presente en el código.
+
+A partir de ahora palabra se corresponde con una melodía.
+
+Si se codifica la armadura de cada escala para crear una matriz generadora sistemática se obtendrá un código cíclico.
+
+Una vez obtenido el código cíclico, se obtendrá la matriz de control paridad mediante transposición de la matriz generadora.
+
+El programa propondrá una serie de palabras aleatorias, si dicha palabra pertenece al código, significa que la palabra es correcta.
+
+Esto se cumple puesto que en Teoría de Códigos $c*Ht=0$ siendo c palabra del código, H matriz de control.

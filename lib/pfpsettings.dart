@@ -43,8 +43,7 @@ class _PfpScreenState extends State<PfpScreen> {
             },
           ),
         ),
-        body: Padding(
-          padding: const EdgeInsets.only(left: 100,bottom: 350.0),
+        body: Center(
           child: ResponsiveRowColumn(
             columnMainAxisAlignment: MainAxisAlignment.center,
             layout: ResponsiveRowColumnType.COLUMN,
