@@ -57,7 +57,7 @@ class _StartViewWidgetState extends State<StartViewWidget> {
               columnSpacing: 40,
               rowMainAxisAlignment: MainAxisAlignment.start,
               layout: ResponsiveRowColumnType.ROW,
-              rowPadding: EdgeInsets.only(left: 350),
+              rowPadding: EdgeInsets.only(left: 310),
               children: [
                 ResponsiveRowColumnItem(
                   rowFlex: 2,
@@ -144,7 +144,7 @@ class _InferiorWidgetState extends State<InferiorWidget> {
             children: [
               ResponsiveRowColumnItem(
                 child: widget.imageList == null
-                    ? Text("No hay imagenes disponibles")
+                    ? Text("No hay imágenes disponibles.")
                     : widget.imageList![0],
               ),
             ],
@@ -195,7 +195,7 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
           rowFit: FlexFit.tight,
           child: Padding(
             padding: const EdgeInsets.only(
-              top: 2,
+              top: 4,
               bottom: 320.0,
               right: 15,
             ),
