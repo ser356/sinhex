@@ -147,7 +147,6 @@ El resultado es un video con una animación de fondo y un texto que se va escrib
 
 Realmente no es una aplicación que compite con sinhex, pero sí que realiza asociaciones sinestésicas de algún modo puesto que convierte texto en audio.
 
-
 <div style="page-break-after: always; visibility: hidden">
 
 ## LLuvia de ideas
@@ -230,15 +229,7 @@ Se ha seguido el diseño Material, empleado por Google, para la creación de la 
 
 Se puede estructurar el Prototipo Digital en cuatro grupos, que en función de en sus subescenarios se dividen en otras pantallas que aportan la funcionalidad.
 
-## Links de Utilidad
 
-Acceso a Figma: [Figma SIN(#)](<https://www.figma.com/file/4lvWH1rp3yNchfrisyp8SF/sin(%23)?type=design&node-id=0%3A1&t=vYXxXjMuf6WuhWdQ-1>)
-
-Navegación por la Interfaz: [sin# TUTORIAL](https://youtu.be/ofFsVAbTR2o)
-
-Acceso a Trello: [Trello](https://trello.com/b/ZMaSyArU/sinhex)
-
-Wireframe: [Wireframe](https://wireframe.cc/eTcUOJ)
 
 <div style="page-break-after: always; visibility: hidden">
 
@@ -637,6 +628,7 @@ block: auto;
 margin-left: auto;
 margin-right: auto;
 width: 25%;" />
+
 <div style="page-break-after: always; visibility: hidden">
 
 _**9. Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores**_
@@ -806,49 +798,49 @@ width: 25%;" />
 
 _**1. Visibilidad del estado del sistema**_
 
->La interfaz no presenta un menú claramente visible que permita al usuario acceder a las diferentes opciones disponibles en la página principal.\
-No obstante, esta estructura se justifica por el enfoque centrado en una única página desde la cual se ejecutan todas las funciones de la aplicación.\
-Sin embargo, se sugiere mejorar la visibilidad del menú de ajustes, actualmente representado por un botón en blanco, proponiendo la inclusión de un ícono como un engranaje, que resultaría más intuitivo para indicar la opción de ajustes.
+> La interfaz no presenta un menú claramente visible que permita al usuario acceder a las diferentes opciones disponibles en la página principal.\
+> No obstante, esta estructura se justifica por el enfoque centrado en una única página desde la cual se ejecutan todas las funciones de la aplicación.\
+> Sin embargo, se sugiere mejorar la visibilidad del menú de ajustes, actualmente representado por un botón en blanco, proponiendo la inclusión de un ícono como un engranaje, que resultaría más intuitivo para indicar la opción de ajustes.
 
 _**2. Coincidencia entre el sistema y el mundo real**_
 
->El sistema utiliza un lenguaje claro y actual, facilitando la comprensión por parte de los usuarios. Se destaca la posibilidad de cambiar el idioma de la aplicación, lo cual contribuye a adaptarla a las preferencias y necesidades del usuario.
+> El sistema utiliza un lenguaje claro y actual, facilitando la comprensión por parte de los usuarios. Se destaca la posibilidad de cambiar el idioma de la aplicación, lo cual contribuye a adaptarla a las preferencias y necesidades del usuario.
 
 _**3. Control y libertad del usuario**_
 
->Se garantiza que los usuarios cuenten con la capacidad de deshacer acciones erróneas o retroceder en cualquier momento, brindando así un sentido de control y libertad.\
-Se destacan los pasos de confirmación, como solicitar la contraseña actual antes de realizar un cambio, lo cual genera una sensación de seguridad.
+> Se garantiza que los usuarios cuenten con la capacidad de deshacer acciones erróneas o retroceder en cualquier momento, brindando así un sentido de control y libertad.\
+> Se destacan los pasos de confirmación, como solicitar la contraseña actual antes de realizar un cambio, lo cual genera una sensación de seguridad.
 
 _**4. Consistencia y estándares**_
 
->La aplicación mantiene un diseño consistente a lo largo de todas sus ventanas, con variaciones mínimas en la presentación de la información, pero manteniendo constantes los elementos importantes. Se observa una uniformidad en aspectos como los colores, el logo y el estilo, lo cual contribuye a la coherencia visual.
+> La aplicación mantiene un diseño consistente a lo largo de todas sus ventanas, con variaciones mínimas en la presentación de la información, pero manteniendo constantes los elementos importantes. Se observa una uniformidad en aspectos como los colores, el logo y el estilo, lo cual contribuye a la coherencia visual.
 
 _**5. Prevención de errores**_
 
->La aplicación se presenta de manera sencilla y simplificada, lo que permite a los usuarios llevar a cabo las tareas de forma intuitiva, minimizando así la posibilidad de cometer errores.
+> La aplicación se presenta de manera sencilla y simplificada, lo que permite a los usuarios llevar a cabo las tareas de forma intuitiva, minimizando así la posibilidad de cometer errores.
 
 _**6. Reconocimiento en lugar de recuerdo**_
 
->El diseño de la página es claro y ofrece instrucciones precisas, facilitando el reconocimiento de los pasos necesarios para llevar a cabo la mayoría de las acciones.
+> El diseño de la página es claro y ofrece instrucciones precisas, facilitando el reconocimiento de los pasos necesarios para llevar a cabo la mayoría de las acciones.
 
 _**7. Flexibilidad y eficiencia de uso**_
 
->La aplicación ha sido diseñada para minimizar el número de pasos requeridos en la realización de las funciones, lo que permite una experiencia eficiente para los usuarios. Aunque su funcionalidad está limitada principalmente a la carga de imágenes, cumple esta tarea de manera elegante y efectiva.
+> La aplicación ha sido diseñada para minimizar el número de pasos requeridos en la realización de las funciones, lo que permite una experiencia eficiente para los usuarios. Aunque su funcionalidad está limitada principalmente a la carga de imágenes, cumple esta tarea de manera elegante y efectiva.
 
 _**8. Estética y diseño minimalista**_
 
->La aplicación sigue una estética minimalista, evitando sobrecargar la pantalla principal.\
-Se sugiere mejorar la utilización del espacio en la pestaña de ajustes, ya que actualmente solo utiliza la mitad del espacio disponible.\
-Esto se evidencia aún más en la pestaña de opciones de cuenta, donde las opciones ocupan solo una cuarta parte de la ventana.\
-Aumentar el tamaño de las opciones permitiría una visualización más clara y menos agobiante para los usuarios.
+> La aplicación sigue una estética minimalista, evitando sobrecargar la pantalla principal.\
+> Se sugiere mejorar la utilización del espacio en la pestaña de ajustes, ya que actualmente solo utiliza la mitad del espacio disponible.\
+> Esto se evidencia aún más en la pestaña de opciones de cuenta, donde las opciones ocupan solo una cuarta parte de la ventana.\
+> Aumentar el tamaño de las opciones permitiría una visualización más clara y menos agobiante para los usuarios.
 
 _**9. Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores**_
 
->No se proporciona retroalimentación o mensajes de alerta claros para indicar si una tarea se ha realizado correctamente o no. Por ejemplo, no se conoce el comportamiento de la aplicación si se intenta cargar un archivo distinto a una imagen. Se sugiere implementar mensajes o indicadores que ayuden a los usuarios a reconocer, diagnosticar y solucionar posibles errores.
+> No se proporciona retroalimentación o mensajes de alerta claros para indicar si una tarea se ha realizado correctamente o no. Por ejemplo, no se conoce el comportamiento de la aplicación si se intenta cargar un archivo distinto a una imagen. Se sugiere implementar mensajes o indicadores que ayuden a los usuarios a reconocer, diagnosticar y solucionar posibles errores.
 
 _**10. Ayuda y documentación**_
 
->La aplicación cuenta con varios apartados en el menú de ajustes que permiten buscar información sobre cómo realizar tareas específicas. Además, se destaca la opción de acceder a un tutorial que explica el uso de la aplicación. Estas características se consideran beneficiosas, especialmente para usuarios menos familiarizados con la tecnología, quienes podrían encontrar dificultades al utilizarla.
+> La aplicación cuenta con varios apartados en el menú de ajustes que permiten buscar información sobre cómo realizar tareas específicas. Además, se destaca la opción de acceder a un tutorial que explica el uso de la aplicación. Estas características se consideran beneficiosas, especialmente para usuarios menos familiarizados con la tecnología, quienes podrían encontrar dificultades al utilizarla.
 
 <div style="page-break-after: always; visibility: hidden">
 
@@ -861,8 +853,6 @@ Para ello se ha empleado el framework Flutter, que permite desarrollar aplicacio
 La evolución de la aplicación se puede ver en el siguiente [repositorio](https://github.com/ser356/sinhex) de GitHub.
 
 ### **Mejoras añadidas**
-
-
 
 En todas las evaluaciones heurísticas se hace evidente la necesidad de añadir un mensaje de error cuando no se ha añadido ninguna imagen, por lo que se ha añadido un mensaje de error en la ventana flotante.
 
@@ -1091,3 +1081,30 @@ Una vez obtenido el código cíclico, se obtendrá la matriz de control paridad 
 El programa propondrá una serie de palabras aleatorias, si dicha palabra pertenece al código, significa que la palabra es correcta.
 
 Esto se cumple puesto que en Teoría de Códigos $c*Ht=0$ siendo c palabra del código, H matriz de control.
+
+## **Bibliografía**
+
+
+Sergio García Seco [Android Studio](https://developer.android.com/studio) 
+
+Sergio García Seco [Android Developers](https://developer.android.com/docs) 
+
+Sergio García Seco: [StackOverflow](https://stackoverflow.com/ser356) 
+
+Sergio García Seco: [GitHub](https://github.com/ser356) 
+
+Sergio García Seco: [Teoría de Códigos](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_c%C3%B3digos)
+
+Sergio García Seco: [Teoría de Códigos Cíclicos](https://es.wikipedia.org/wiki/C%C3%B3digo_c%C3%ADclico)
+
+Sergio García Seco: [Flutter](https://flutter.dev/docs) 
+
+Sergio García Seco: [Dart](https://dart.dev/docs)  __Recurso Online__
+
+Sergio García Seco : [Figma SIN(#)](https://www.figma.com/file/4lvWH1rp3yNchfrisyp8SF/sin(%23)?type=design&node-id=0%3A1&t=vYXxXjMuf6WuhWdQ-1) __Recurso Online__ 
+
+Sergio García Seco : [sin# TUTORIAL](https://youtu.be/ofFsVAbTR2o) __Recurso Online__
+
+Sergio García Seco Trello: [Trello Project](https://trello.com/b/ZMaSyArU/sinhex) __Recurso Online__
+
+Sergio García Seco Proyecto Wireframe: [Wireframe Project](https://wireframe.cc/eTcUOJ) __Recurso Online__
