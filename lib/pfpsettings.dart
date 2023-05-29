@@ -43,35 +43,33 @@ class _PfpScreenState extends State<PfpScreen> {
             },
           ),
         ),
-        body: Center(
-          child: Padding(
-            padding: const EdgeInsets.only(bottom: 500.0),
-            child: ResponsiveRowColumn(
-              columnMainAxisAlignment: MainAxisAlignment.center,
-              layout: ResponsiveRowColumnType.COLUMN,
-              columnSpacing: 20,
-              children: [
-                ResponsiveRowColumnItem(
-                  child: CircleAvatar(
-                      radius: 100,
-                      backgroundImage: Image.asset(dh.defaultpfp).image),
+        body: Padding(
+          padding: const EdgeInsets.only(left: 100,bottom: 350.0),
+          child: ResponsiveRowColumn(
+            columnMainAxisAlignment: MainAxisAlignment.center,
+            layout: ResponsiveRowColumnType.COLUMN,
+            columnSpacing: 25,
+            children: [
+              ResponsiveRowColumnItem(
+                child: CircleAvatar(
+                    radius: 100,
+                    backgroundImage: Image.asset(dh.defaultpfp).image),
+              ),
+              ResponsiveRowColumnItem(
+                  child: ElevatedButton(
+                onPressed: () async {
+                  print("Button Pressed");
+                  selectImage();
+                  setState(() {});
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: '65928A'.toColor()),
+                child: Text(
+                  "Cambiar Foto de Perfil",
+                  style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
-                ResponsiveRowColumnItem(
-                    child: ElevatedButton(
-                  onPressed: () async {
-                    print("Button Pressed");
-                    selectImage();
-                    setState(() {});
-                  },
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: '65928A'.toColor()),
-                  child: Text(
-                    "Cambiar Foto de Perfil",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
-                  ),
-                ))
-              ],
-            ),
+              ))
+            ],
           ),
         ),
       ),
