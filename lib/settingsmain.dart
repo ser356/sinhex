@@ -6,7 +6,7 @@ import "package:sinhex/startviewscreen.dart";
 import "package:url_launcher/url_launcher.dart";
 import 'accountsettings.dart';
 
-final Uri faq = Uri.parse("https://github.com/ser356/sinhex/FAQ.md");
+final Uri faq = Uri.parse("https://github.com/ser356/sinhex/blob/main/FAQ.MD");
 final Uri tutorial = Uri.parse("https://youtu.be/ofFsVAbTR2o");
 Future<void> _launchUrl(url) async {
   if (!await launchUrl(url)) {
