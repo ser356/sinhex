@@ -229,8 +229,6 @@ Se ha seguido el diseño Material, empleado por Google, para la creación de la 
 
 Se puede estructurar el Prototipo Digital en cuatro grupos, que en función de en sus subescenarios se dividen en otras pantallas que aportan la funcionalidad.
 
-
-
 <div style="page-break-after: always; visibility: hidden">
 
 </div>
@@ -1084,27 +1082,26 @@ Esto se cumple puesto que en Teoría de Códigos $c*Ht=0$ siendo c palabra del c
 
 ## **Bibliografía**
 
+Sergio García Seco [Android Studio](https://developer.android.com/studio)
 
-Sergio García Seco [Android Studio](https://developer.android.com/studio) 
+Sergio García Seco [Android Developers](https://developer.android.com/docs)
 
-Sergio García Seco [Android Developers](https://developer.android.com/docs) 
+Sergio García Seco: [StackOverflow](https://stackoverflow.com/ser356)
 
-Sergio García Seco: [StackOverflow](https://stackoverflow.com/ser356) 
-
-Sergio García Seco: [GitHub](https://github.com/ser356) 
+Sergio García Seco: [GitHub](https://github.com/ser356)
 
 Sergio García Seco: [Teoría de Códigos](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_c%C3%B3digos)
 
 Sergio García Seco: [Teoría de Códigos Cíclicos](https://es.wikipedia.org/wiki/C%C3%B3digo_c%C3%ADclico)
 
-Sergio García Seco: [Flutter](https://flutter.dev/docs) 
+Sergio García Seco: [Flutter](https://flutter.dev/docs)
 
-Sergio García Seco: [Dart](https://dart.dev/docs)  __Recurso Online__
+Sergio García Seco: [Dart](https://dart.dev/docs) **Recurso Online**
 
-Sergio García Seco : [Figma SIN(#)](https://www.figma.com/file/4lvWH1rp3yNchfrisyp8SF/sin(%23)?type=design&node-id=0%3A1&t=vYXxXjMuf6WuhWdQ-1) __Recurso Online__ 
+Sergio García Seco : [Figma SIN(#)](<https://www.figma.com/file/4lvWH1rp3yNchfrisyp8SF/sin(%23)?type=design&node-id=0%3A1&t=vYXxXjMuf6WuhWdQ-1>) **Recurso Online**
 
-Sergio García Seco : [sin# TUTORIAL](https://youtu.be/ofFsVAbTR2o) __Recurso Online__
+Sergio García Seco : [sin# TUTORIAL](https://youtu.be/ofFsVAbTR2o) **Recurso Online**
 
-Sergio García Seco Trello: [Trello Project](https://trello.com/b/ZMaSyArU/sinhex) __Recurso Online__
+Sergio García Seco Trello: [Trello Project](https://trello.com/b/ZMaSyArU/sinhex) **Recurso Online**
 
-Sergio García Seco Proyecto Wireframe: [Wireframe Project](https://wireframe.cc/eTcUOJ) __Recurso Online__
+Sergio García Seco Proyecto Wireframe: [Wireframe Project](https://wireframe.cc/eTcUOJ) **Recurso Online**
