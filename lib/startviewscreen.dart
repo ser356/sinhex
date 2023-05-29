@@ -4,7 +4,6 @@ import 'package:image_picker/image_picker.dart';
 import 'package:sinhex/model/dataHandler.dart';
 import 'package:sinhex/settingsmain.dart';
 import 'hex.dart';
-import 'candidatescreen.dart';
 
 var dh = DataHandler();
 
@@ -40,75 +39,82 @@ class _StartViewWidgetState extends State<StartViewWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          /*
-        Creamos para la AppBar de la parte superior de arriba..
-        */
-          automaticallyImplyLeading: false,
-          backgroundColor: "222222".toColor(),
-          title: ResponsiveRowColumn(
-            columnSpacing: 40,
-            rowMainAxisAlignment: MainAxisAlignment.spaceBetween,
-            layout: ResponsiveRowColumnType.ROW,
-            children: [
-              ResponsiveRowColumnItem(
-                rowFlex: 2,
-                columnFlex: 2,
-                rowFit: FlexFit.tight,
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => SettingsMain()));
-                  },
-                  child: CircleAvatar(
-                    // set circular shape
-                    radius: 22,
-                    backgroundImage: Image.asset(dh.defaultpfp).image,
-                    // set background image and its fit
-                  ),
-                ),
-              )
-            ],
-          ),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.all(5.0),
-          child: const Center(
-            child: ResponsiveRowColumn(
-              columnMainAxisAlignment: MainAxisAlignment.center,
-              columnSpacing: 10,
-              layout: ResponsiveRowColumnType.COLUMN,
+    return WillPopScope(
+      onWillPop: () async {
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => StartViewScreen()));
+        return false;
+      },
+      child: Scaffold(
+          appBar: AppBar(
+            /*
+          Creamos para la AppBar de la parte superior de arriba..
+          */
+            automaticallyImplyLeading: false,
+            backgroundColor: "222222".toColor(),
+            title: ResponsiveRowColumn(
+              columnSpacing: 40,
+              rowMainAxisAlignment: MainAxisAlignment.spaceBetween,
+              layout: ResponsiveRowColumnType.ROW,
               children: [
                 ResponsiveRowColumnItem(
                   rowFlex: 2,
                   columnFlex: 2,
                   rowFit: FlexFit.tight,
-                  child: SizedBox(
-                    height: 300,
-                    child: Card(
-                      elevation: 10,
-                      child: SuperiorWidget(),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SettingsMain()));
+                    },
+                    child: CircleAvatar(
+                      // set circular shape
+                      radius: 22,
+                      backgroundImage: Image.asset(dh.defaultpfp).image,
+                      // set background image and its fit
                     ),
                   ),
-                ),
-                ResponsiveRowColumnItem(
-                    child: Padding(
-                  padding: EdgeInsets.only(bottom: 20),
-                  child: SizedBox(
-                    height: 500,
-                    child: Card(
-                      elevation: 10,
-                      child: InferiorWidget(),
-                    ),
-                  ),
-                ))
+                )
               ],
             ),
           ),
-        ));
+          body: Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: const Center(
+              child: ResponsiveRowColumn(
+                columnMainAxisAlignment: MainAxisAlignment.center,
+                columnSpacing: 10,
+                layout: ResponsiveRowColumnType.COLUMN,
+                children: [
+                  ResponsiveRowColumnItem(
+                    rowFlex: 2,
+                    columnFlex: 2,
+                    rowFit: FlexFit.tight,
+                    child: SizedBox(
+                      height: 400,
+                      child: Card(
+                        elevation: 10,
+                        child: SuperiorWidget(),
+                      ),
+                    ),
+                  ),
+                  ResponsiveRowColumnItem(
+                      child: Padding(
+                    padding: EdgeInsets.only(bottom: 20),
+                    child: SizedBox(
+                      height: 300,
+                      child: Card(
+                        elevation: 10,
+                        child: InferiorWidget(),
+                      ),
+                    ),
+                  ))
+                ],
+              ),
+            ),
+          )),
+    );
   }
 }
 
@@ -125,7 +131,7 @@ class _InferiorWidgetState extends State<InferiorWidget> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 500,
+      height: 300,
       width: double.infinity,
       child: Center(
         child: SizedBox(
@@ -158,6 +164,7 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
   @override
   Widget build(BuildContext context) {
     return ResponsiveRowColumn(
+      rowSpacing: 20,
       rowMainAxisAlignment: MainAxisAlignment.spaceEvenly,
       layout: ResponsiveRowColumnType.ROW,
       children: [
@@ -167,7 +174,7 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
           child: SizedBox(
             width: double.infinity,
             child: Padding(
-              padding: const EdgeInsets.only(top: 4, bottom: 220.0, left: 10),
+              padding: const EdgeInsets.only(top: 0, bottom: 320, left: 15),
               child: FittedBox(
                 alignment: Alignment.topLeft,
                 fit: BoxFit.none,
@@ -184,41 +191,32 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
           columnFlex: 2,
           rowFit: FlexFit.tight,
           child: Padding(
-            padding: const EdgeInsets.only(top: 4, bottom: 150.0, right: 10),
+            padding: const EdgeInsets.only(
+              top: 1,
+              bottom: 320.0,
+              right: 15,
+            ),
             child: FittedBox(
               alignment: Alignment.topRight,
               fit: BoxFit.none,
               child: InkWell(
-                //disable hover effect
-
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                overlayColor: MaterialStateColor.resolveWith(
-                    (states) => Colors.transparent),
                 onTap: () async {
+                  print("socorrrroooooooooooooooooooo");
                   selectImage();
                   setState(() {});
                 },
-                child: Padding(
-                  padding:
-                      const EdgeInsets.only(top: 5, bottom: 150.0, left: 10),
-                  child: FittedBox(
-                    fit: BoxFit.none,
-                    child: RichText(
-                      text: TextSpan(
-                        text: 'Añadir',
-                        style:
-                            TextStyle(color: '012016'.toColor(), fontSize: 25),
-                        children: [
-                          WidgetSpan(
-                            child: Icon(
-                              Icons.add,
-                              color: "65928A".toColor(),
-                            ),
-                          ),
-                        ],
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Añadir',
+                    style: TextStyle(color: '012016'.toColor(), fontSize: 25),
+                    children: [
+                      WidgetSpan(
+                        child: Icon(
+                          Icons.add,
+                          color: "65928A".toColor(),
+                        ),
                       ),
-                    ),
+                    ],
                   ),
                 ),
               ),
@@ -258,6 +256,7 @@ class _SuperiorWidgetState extends State<SuperiorWidget> {
                 ),
                 Padding(padding: EdgeInsets.all(8.0)),
                 GestureDetector(
+                  behavior: HitTestBehavior.translucent,
                   child: Text("Camara"),
                   onTap: () async {
                     path = await openCamera();

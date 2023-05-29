@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sinhex/hex.dart';
 import 'package:sinhex/login.dart';
+// ignore: import_of_legacy_library_into_null_safe
+import 'package:splashscreen/splashscreen.dart';
 
 import 'registro.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -34,8 +36,23 @@ class MyApp extends StatelessWidget {
               ResponsiveBreakpoint.autoScale(1200, name: DESKTOP),
             ],
           )),
-      home: MainScreen(),
+      home: SplashScreenSH(),
       debugShowCheckedModeBanner: false,
+    );
+  }
+}
+
+class SplashScreenSH extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SplashScreen(
+      backgroundColor: "26876B".toColor(),
+      seconds: 3,
+      navigateAfterSeconds: MainScreen(),
+      loadingText: Text("Cargando...",
+          style: TextStyle(color: Colors.white, fontSize: 20)),
+      photoSize: 100.0,
+      loaderColor: Colors.white,
     );
   }
 }
